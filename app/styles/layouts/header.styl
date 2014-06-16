@@ -1,0 +1,104 @@
+//edit()
+// *
+// 	transition: all .75s ease-in-sine
+
+$t1 = all .75s ease-in-sine;
+
+header
+	transition: all 1.25s ease-in-sine
+	position: fixed
+	//background: rgba(0, 166, 252, 0.36);
+	background: linear-gradient(top, red, green, blue);
+	z-index: 1;
+	span(ratio = 1, offset = 0)
+	height: 700px;
+
+	section.title
+		width:100%;
+		//margin: 0 auto;
+		h1
+			transition: all .75s ease-in-sine
+			text-align: center
+			padding-top: 50px;
+			width: 100%;
+			font-size: 8em;
+			color: white;
+//GASP
+.headerResize
+	transition: all .75s ease-in-sine
+	height: 100px;
+	h1
+		padding-top: 0px;
+			
+section.title.logoResize
+	h1
+		transition: $t1;
+		padding-top: 0px;
+		font-size: 3em;
+		color: white;
+
+nav
+	transition: $t1;
+	margin-top: 165px;
+	padding-right: 25px !important;
+	padding-left: 25px !important;
+	float: right !important;
+	col(span = 1)
+	span(ratio = 1/1.2, offset = 0)
+	ul
+		span(ratio = 1, offset = 0)
+		text-align: center;
+		li
+			transition: all 1.00s ease-in-sine
+			col(1/5)
+			border: solid 5px white;
+			padding: .5em;
+			a
+				font-size: 1.5em;
+				color: white;
+				text-decoration: none;
+nav.navResize
+	ul
+		li
+			span(1/5)
+			border: solid 0px white;
+			padding-top: 1em;
+			padding-left: 0;
+			padding-right: 0;
+			a
+				font-size: 1.2em;
+
+
+
+
+
+
+//Nav Effect
+
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+/* Triangles */
+.Striangles::before,
+.Striangles::after {
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);
+}
+
+.Striangles::before {
+	top: -50px;
+	background: #2980b9;
+}
+
+.Striangles::after {
+	bottom: -50px;
+	z-index: 10;
+	background: inherit;
+}

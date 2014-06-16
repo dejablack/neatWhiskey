@@ -1,0 +1,40 @@
+//- Var for nav
+include variables
+
+// Nav
+header.header
+nav(role="navigation").navbar.navbar-inverse
+	.navbar-header
+		button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle
+			span.sr-only
+			span.icon-bar
+			span.icon-bar
+			span.icon-bar
+		a(href="#").navbar-brand Creativo
+	.collapse.navbar-collapse.navbar-ex1-collapse
+		ul.nav.navbar-nav.navbar-right
+			- each page,i in Navigation
+				- if (currentPage === page.link)
+					li(class='#{page.link}').active
+						a(href='#{page.link}.html') #{page.title}
+				- else
+					li(class="#{page.link}")
+						a(href='#{page.link}.html') #{page.title}
+			li.dropdown
+				a(href="#", data-toggle="dropdown").dropdown-toggle Dropdown <b class="caret"></b>
+				ul.dropdown-menu
+					li: a(href="#") Action
+					li: a(href="#") Another action
+					li: a(href="#") Something else here
+					li: a(href="#") Separated link
+//-					
+	nav(role="navigation").navbar.navbar-inverse.navbar-fixed-top
+		a(href="#").navbar-brand Creativo
+		ul.nav.navbar-nav.navbar-right
+			- each page,i in Navigation
+				- if (currentPage === page.link)
+					li(class='#{page.link}').active
+						a(href='#{page.link}.html') #{page.title}
+				- else
+					li(class="#{page.link}")
+						a(href='#{page.link}.html') #{page.title}

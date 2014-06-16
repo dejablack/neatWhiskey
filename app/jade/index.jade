@@ -1,0 +1,67 @@
+extends layouts/default
+
+append mainVars
+	- currentPage = 'index'
+	- pageTitle = 'Welcome to the home page'
+	- description = 'Da index'
+	- keywords = 'Da keywords'
+	- author = 'T'
+
+
+block content
+	section.main
+		h1 BootStrap <span>/</span> Jeet <br/> Bourbon <span>/</span> Gulp
+		
+	section.pictures
+		.wrap
+			aside
+				h2 Sidebar
+				ul#myTab.nav.nav-pills.nav-stacked
+					li.active
+						a(href='#people' data-toggle="tab") Any
+					li
+						a(href='#tech' data-toggle="tab") Tech
+					li
+						a(href='#nature' data-toggle="tab") Nature
+			article
+				#people.tab-pane.fade.in.active
+					img(src="http://placeimg.com/200/200/any" alt="...")
+					img(src="http://placeimg.com/200/200/animals" alt="...")
+					img(src="http://placeimg.com/200/200/tech" alt="...")
+					img(src="http://placeimg.com/200/200/nature" alt="...")
+					img(src="http://placeimg.com/200/200/people" alt="...")
+					img(src="http://placeimg.com/200/200/architecture" alt="...")
+				#tech.tab-pane.fade.in
+					img(src="http://placeimg.com/200/200/tech" alt="...")
+					img(src="http://placeimg.com/200/200/tech" alt="...")
+					img(src="http://placeimg.com/200/200/tech" alt="...")
+					img(src="http://placeimg.com/200/200/tech" alt="...")
+					img(src="http://placeimg.com/200/200/tech" alt="...")
+					img(src="http://placeimg.com/200/200/tech" alt="...")
+				#nature.tab-pane.fade.in
+					img(src="http://placeimg.com/200/200/nature" alt="...")
+					img(src="http://placeimg.com/200/200/nature" alt="...")
+					img(src="http://placeimg.com/200/200/nature" alt="...")
+					img(src="http://placeimg.com/200/200/nature" alt="...")
+					img(src="http://placeimg.com/200/200/nature" alt="...")
+					img(src="http://placeimg.com/200/200/nature" alt="...")
+	section.media
+		.wrap
+			.article
+				.media
+					a(href="#").pull-left
+						img(data-src="holder.js/64x64", alt="").media-object
+					.media-body
+						h4.media-heading Media heading
+						p Test
+				.media
+					a(href="#").pull-left
+						img(data-src="holder.js/64x64/sky", alt="").media-object
+					.media-body
+						h4.media-heading Media heading 2
+						p Text goes here...
+			.aside
+				.progress.progress-striped.active
+					.progress-bar(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+						span.sr-only 60% Complete
+

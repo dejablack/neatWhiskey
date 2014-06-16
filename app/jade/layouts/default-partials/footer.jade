@@ -1,0 +1,11 @@
+//- Var for foot
+include variables
+
+// Footer
+footer.footer
+    p &copy; 2015 Mysite. All rights reserved.
+    nav
+        ul
+            - each page,i in footerNavigation
+                li(class="#{page.link}")
+                        a(href='#{page.link}.html') #{page.title}
