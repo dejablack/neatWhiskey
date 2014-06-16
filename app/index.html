@@ -13,6 +13,7 @@
     <link rel="apple-touch-icon" href="">
     <link rel="apple-touch-icon" sizes="72x72" href="">
     <link rel="apple-touch-icon" sizes="114x114" href="">
+    <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,200,600" rel="stylesheet" type="text/css">
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -21,8 +22,41 @@
     <!-- endbuild -->
   </head>
   <!-- Nav-->
-  <header></header>
-  <h1>Hello</h1>
+  <header class="header">
+    <div class="headerTitle">
+      <div class="headDivide">
+        <div class="creativo">
+          <h1 id="mTitle"><a href="#index">Creativo</a></h1>
+          <div class="page">
+            <ul>
+              <li>One</li>
+              <li>Two</li>
+              <li>Three</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav role="navigation">
+      <ul id="menu">
+        <li class="#home"><a href="#home.html">Home</a></li>
+        <li class="#about"><a href="#about.html">About Us</a></li>
+        <li class="#process"><a href="#process.html">Process</a></li>
+        <li class="#contact"><a href="#contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="content">
+    <div class="box box1">
+      <h2>Box1</h2>
+    </div>
+    <div class="box box2">
+      <h2>Box2</h2>
+    </div>
+    <div class="box box3">
+      <h2>Box3</h2>
+    </div>
+  </section>
   <!-- Footer-->
   <footer class="footer">
     <p>&copy; 2015 Mysite. All rights reserved.</p>
@@ -34,6 +68,11 @@
   </footer>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.8/TweenMax.min.js"></script>
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js-->
+  <script src="bower_components/slicknav/jquery.slicknav.min.js"></script>
+  <!-- endbower -->
+  <!-- endbuild  -->
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
   <!-- endbuild -->

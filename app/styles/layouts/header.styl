@@ -1,104 +1,133 @@
-//edit()
-// *
-// 	transition: all .75s ease-in-sine
+//----------------------------------*\
+// Header Globas
+//----------------------------------*/
+////-------------------*\
+//// Tranz
+////-------------------*/
 
-$t1 = all .75s ease-in-sine;
+$navTraz = all .25s ease-in-sine;
 
-header
-	transition: all 1.25s ease-in-sine
-	position: fixed
-	//background: rgba(0, 166, 252, 0.36);
-	background: linear-gradient(top, red, green, blue);
-	z-index: 1;
-	span(ratio = 1, offset = 0)
-	height: 700px;
 
-	section.title
-		width:100%;
-		//margin: 0 auto;
-		h1
-			transition: all .75s ease-in-sine
-			text-align: center
-			padding-top: 50px;
-			width: 100%;
-			font-size: 8em;
-			color: white;
-//GASP
-.headerResize
-	transition: all .75s ease-in-sine
+//----------------------------------*\
+// Header
+//----------------------------------*/
+.header
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
 	height: 100px;
+	background-color: black;
+	color: white;
+
+
+//----------------------------------*\
+// Page Indicator
+//----------------------------------*/
+
+////-------------------*\
+//// Wrapper
+////-------------------*/
+.headerTitle
+	position: absolute;
+	left: 50px;
+	top: 30px;
+	width: 340px;
+	height: 40px;
+	border: solid 1px white;
+	border-radius: 3px; 
+
+	
+////-------------------*\
+//// Creativo Title
+////-------------------*/
+.creativo 
 	h1
-		padding-top: 0px;
-			
-section.title.logoResize
-	h1
-		transition: $t1;
-		padding-top: 0px;
-		font-size: 3em;
-		color: white;
+		@extend .pf2;
+		@extend .reset;
+		text-transform: uppercase;
+		letter-spacing: 17px;
+		padding-top: 3px;
+		padding-left: 14px;
+		font-size: 30px;
+		cursor: pointer;
+		a
+			text-decoration: none;
+			color: white; 
+
+////-------------------*\
+//// Head Divider
+////-------------------*/
+.headDivide
+	@extend .reset;
+	border-right: solid 1px white;
+	width: 280px;
+	height: 38px;
+
+
+////-------------------*\
+//// Page Indicator
+////-------------------*/
+.page
+	position: absolute;
+	top: -5px;
+	left: 225px;
+	display: inline-block;
+	width: 400px;
+	height: 30px;
+	overflow: hidden;
+	ul
+		list-style: none;
+		position: absolute;
+	ul li
+		margin-top: 18px;
+		height: 50px;
+		left: 50px;
+		font-size: 24px;
+
+
+//----------------------------------*\
+// Nav
+//----------------------------------*/
 
 nav
-	transition: $t1;
-	margin-top: 165px;
-	padding-right: 25px !important;
-	padding-left: 25px !important;
-	float: right !important;
-	col(span = 1)
-	span(ratio = 1/1.2, offset = 0)
-	ul
-		span(ratio = 1, offset = 0)
-		text-align: center;
+	border: solid 1px white;
+	position: absolute;
+	right: 50px;
+	top: 35px;
+	border-radius: 3px; 
 		li
-			transition: all 1.00s ease-in-sine
-			col(1/5)
-			border: solid 5px white;
-			padding: .5em;
+			transition: background .25s $tz1, color .25s $tz1;
+			float: left;
+			width: 85px;
+			height: 31px;
+			padding-top: 5px; 
+			text-align: center
+			border-right: solid 1px white;
+			&:last-child
+				border-right: solid 0px white;
+			&:hover
+				transition: $navTraz;
+				cursor: pointer
+				background: white
+				a
+					color: gray;
+
 			a
-				font-size: 1.5em;
+				@extend .pf2;
 				color: white;
 				text-decoration: none;
-nav.navResize
-	ul
-		li
-			span(1/5)
-			border: solid 0px white;
-			padding-top: 1em;
-			padding-left: 0;
-			padding-right: 0;
-			a
-				font-size: 1.2em;
 
 
 
 
 
-
-//Nav Effect
-
-section::before,
-section::after {
-	position: absolute;
-	content: '';
-	pointer-events: none;
-}
-
-/* Triangles */
-.Striangles::before,
-.Striangles::after {
-	left: 50%;
-	width: 100px;
-	height: 100px;
-	-webkit-transform: translateX(-50%) rotate(45deg);
-	transform: translateX(-50%) rotate(45deg);
-}
-
-.Striangles::before {
-	top: -50px;
-	background: #2980b9;
-}
-
-.Striangles::after {
-	bottom: -50px;
-	z-index: 10;
-	background: inherit;
-}
+//----------------------------------*\
+// Mobile Nav
+//----------------------------------*/
+.slicknav_menu 
+	display:none;
++below(2)
+	.js #menu
+		display:none;
+	.js .slicknav_menu
+		display:block;
