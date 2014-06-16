@@ -11,7 +11,12 @@ var gulp = require('gulp'),
     stylus = require('gulp-stylus'),
     nib = require('nib'),
     axisCss = require('axis-css'),
-    rupture = require('rupture');
+    rupture = require('rupture'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
+    gutil = require('gulp-util'),
+    rename = require('gulp-rename');
+
 
 
 
@@ -56,6 +61,17 @@ gulp.task('html', ['styles', 'scripts'], function () {
         .pipe(gulp.dest('dist'))
         .pipe($.size());
 });
+
+//concat, uglify, and rename vendor scripts
+// gulp.task('vendor', function() {  
+//   return gulp.src('scripts/vendor/*.js')
+//     .pipe(concat('vendor.js'))
+//     .pipe(gulp.dest('build'))
+//     .pipe(uglify())
+//     .pipe(rename('vendor.min.js'))
+//     .pipe(gulp.dest('build'))
+//     .on('error', gutil.log)
+// });
 
 gulp.task('images', function () {
     return gulp.src('app/images/**/*')
@@ -153,7 +169,6 @@ gulp.task('watch', ['connect', 'serve'], function () {
         'app/images/**/*'
     ]).on('change', function (file) {
         server.changed(file.path);
-        .pipe($.connect.reload());
     });
 
     gulp.watch('app/jade/**/*.jade', ['jade']);
