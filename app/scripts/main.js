@@ -67,13 +67,3 @@ var $window = $(window)
 					});
 				}).resize();
 
-
-// Creativo Pulse
-
-$( '#mTitle' ).hover(
-  function() {
-    $( this ).addClass( 'animated pulse' );
-  }, function() {
-    $( this ).removeClass( 'animated pulse' );
-  }
-);
