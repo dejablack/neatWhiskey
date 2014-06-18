@@ -1,0 +1,146 @@
+
+
+//----------------------------------*\
+// Global
+//----------------------------------*/
+
+#process
+	background: $c3;
+	+tablet(900px)
+		background: green;
+	height: 1800px;
+	section
+		center(max-width = 1410px)
+	article
+		center(max-width = 1220px)
+////-------------------*\
+//// Color
+////-------------------*/
+
+$darkO = #cc7614;
+$iconR = #eb3c32;
+$arrowR = #c0392b;
+
+////-------------------*\
+//// Reg Arrow
+////-------------------*/
+.dArrow
+	margin: 25px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 30px 30px 0 30px;
+	border-color: $arrowR transparent transparent transparent;
+
+////-------------------*\
+//// Break Arrow
+////-------------------*/
+.pBreak
+	col(8/9)
+	shift(1/18)
+	height: 0;
+	border-style: solid;
+	border-width: 20px 20px 0 15px;
+	border-color: $darkO transparent transparent transparent;		
+
+
+//----------------------------------*\
+// Title
+//----------------------------------*/
+
+#process
+	.processTitle
+		h1
+			@extend .pf2;
+			@extend .reset;
+			color: $g1; 
+			font-size: 8em;
+			text-align: center;
+	.processDisc
+		col(7.9/9)
+		shift(1.1/18)
+		h2
+			@extend .pf1;
+			color: #7E4D15;
+			text-align: center
+			font-size: 2em;
+	////-------------------*\
+	//// Text Arrow Container
+	////-------------------*/
+	.pTopBreak
+		@extend .pBreak;
+		border-width: 0 20px 20px 20px;
+		border-color: transparent transparent $darkO transparent;
+	.pBottomBreak
+		@extend .pBreak;
+
+
+//----------------------------------*\
+// Grid Process
+//----------------------------------*/
+
+.process1
+	col(1/2, uncycle: 3, cycle: 2)
+	+below(2)
+		stack()
+	margin-top: 25px;
+	.icon
+		color: $iconR;
+		text-align: center
+		font-size: 4em;
+		.processBoxTitle
+			uppercase()
+			margin-top: -15px; 
+			font-size: .35em;
+			color: $g1;
+	.downArrowWrap
+		col(1/2)
+		shift(1/2.7)
+		.downArrow
+			@extend .dArrow;
+			margin-top: -10px;
+	.pDescript
+		col(1)
+		.numberBox
+			span(1/12)
+			h2
+				@extend .sf1;
+				padding: 5px;
+				font-size: 4em;
+				margin-left: 5px;
+				margin-top: 5px; 
+				text-align: center;
+				background: $c3;
+				color: #444;
+				border-radius: 3px;
+		.descriptBox
+			@extend .pf2;
+			height: 200px;
+			padding: 15px;
+			text-align: center;
+			color: $g1;
+			font-size: 1.3em;
+			border-radius: 4px;
+			background: rgba(235, 60, 50, 0.79);
+			box-shadow: 0px 3px 10px 0px rgba(50, 50, 50, 0.68);
+			p 
+				span(11/12)
+
+
+.process2
+	@extend .process1;
+	.downArrow
+		@extend .dArrow;
+	h2
+		@extend .sf1;
+	.descriptBox
+		@extend .pf2;
+
+.process3
+	@extend .process1;
+	.downArrow
+		@extend .dArrow;
+	h2
+		@extend .sf1;
+	.descriptBox
+		@extend .pf2;
