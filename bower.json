@@ -8,6 +8,7 @@
   "devDependencies": {
     "holderjs": "~2.3.2",
     "slicknav": "*",
-    "FitText.js": "*"
+    "FitText.js": "*",
+    "ScrollMagic": "~1.0.8"
   }
 }

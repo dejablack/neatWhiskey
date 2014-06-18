@@ -51,11 +51,11 @@ function randomInteger(min, max){
 }
 
 
-	tl.staggerFrom(splitTitle.chars, .5, {autoAlpha:0, visibility:"visible", rotationX:360, transformOrigin:"100% 100% 100", ease:Back.easeOut}, 0.10);
+	tl.staggerFrom(splitTitle.chars, .75, {autoAlpha:0, visibility:"visible", rotationX:360, transformOrigin:"100% 100% 100", ease:Back.easeOut}, 0.10);
 	tl.staggerFrom(splitTitle2.chars, .5, {autoAlpha:0, rotationX:0, transformOrigin:"0% 50% -50", rotationY:360, ease:Back.easeOut}, 0.02);
 	tl.staggerFrom(splitTitle3.chars, .75, {autoAlpha:0, rotationY:360, ease:Back.easeOut}, 0.02);
 	tl.to(iconOne, .5,  {css:{autoAlpha:1, scale:'1'}, ease:Back.easeOut});
 	tl.to(iconTwo, .5,  {css:{autoAlpha:1, scale:'1'}, ease:Back.easeOut});
 	tl.to(iconThree, .5,  {css:{autoAlpha:1, scale:'1'}, ease:Back.easeOut});
-	tl.to(indexBtn, 1.25,  {css:{autoAlpha:1, scale:'1'}, ease:Bounce.easeOut});
+	tl.to(indexBtn, .75,  {css:{autoAlpha:1, scale:'1'}});
 
