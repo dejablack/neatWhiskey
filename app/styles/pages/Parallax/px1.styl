@@ -89,8 +89,8 @@ $textShadow = rgb(23, 23, 23) -1px 1px 0px, rgb(24, 24, 24) -2px 2px 0px, rgb(25
 
 	.mobilePX1
 		+below(2)
-			//background: $g2;
-			//min-height: 110px;
+			background: $g2;
+			min-height: 110px;
 
 			h1
 				@extend .reset;
@@ -108,48 +108,86 @@ $textShadow = rgb(23, 23, 23) -1px 1px 0px, rgb(24, 24, 24) -2px 2px 0px, rgb(25
 // PX2
 //----------------------------------*/
 
-// #processPX2
-// 	#parallaxPX2
-// 		margin-bottom: 0px;
-// 		position: relative;
-// 		overflow: hidden;
+#processPX2
+	#parallaxPX2
+		margin-bottom: 0px;
+		position: relative;
+		overflow: hidden;
+		+below(2)
+			display: none;
 
-// 	#parallaxPX2 h3
-// 		font-size: 80px;
-// 		text-align: center;
-// 		margin: -40px 0 0 0;
-// 		position: absolute;
-// 		top: 50%;
-// 		width: 100%;
-// 		line-height: 80px;
+	#parallaxPX2 h3
+		font-size: 80px;
+		text-align: center;
+		margin: -40px 0 0 0;
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		line-height: 80px;
+		+below(2)
+			display: none;
 
-// 	#parallaxPX2 #parallaxBGPX2
-// 		position: relative;
-// 		height: 300px;
-// 		width: 100%;
-// 		background-image: url("../images/px2GC.jpg");
+	#parallaxPX2 #parallaxBGPX2
+		position: relative;
+		height: 300px;
+		width: 100%;
+		background-image: url("../images/px2GC.jpg");
+		+below(2)
+			display: none;
 
-// 	#parallaxBGPX2
-// 		background-size: cover; 
-// 		background-position:0 100%;
+	#parallaxBGPX2
+		background-size: cover; 
+		background-position:0 100%;
+		+below(2)
+			display: none;
 
-// 	#parallaxBGPX2 .top
-// 		height: 10px;
-// 		width: 100%;
-// 		position: absolute;
-// 		top: 0;
-// 		background-image: url("../images/parallax_shadow_top.png");
+	#parallaxBGPX2 .top
+		height: 10px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		background-image: url("../images/parallax_shadow_top.png");
+		+below(2)
+			display: none;
 
-// 	#parallaxBGPX2 .bottom 
-// 		height: 10px;
-// 		width: 100%;
-// 		position: absolute;
-// 		bottom: 0;
-// 		background-image: url("../images/parallax_shadow_bottom.png");
+	#parallaxBGPX2 .bottom 
+		height: 10px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		background-image: url("../images/parallax_shadow_bottom.png");
+		+below(2)
+			display: none;
+////-------------------*\
+//// Mobile Styles
+////-------------------*/
 
-// 	////-------------------*\
-// 	//// Mobile Styles
-// 	////-------------------*/
+.mobilePX2Shadow
+	display: none;
+	+below(2)
+		display: block;
+		background: $g2;
+	.top
+		height: 10px;
+		width: 100%;
+		top: 0;
+		background-image: url("../images/parallax_shadow_top.png");
+	.bottom
+		height: 10px;
+		width: 100%;
+		bottom: 0;
+		background-image: url("../images/parallax_shadow_bottom.png");
 
-// 	.mobilePX2Shadow
-// 		display: none;
+.mobilePX2
+	+below(2)
+
+		h1
+			@extend .reset;
+			@extend .sf1;
+			padding-top: 30px;
+			padding-bottom: 40px;
+			padding-left: 15px;
+			text-shadow: $textShadow;
+			text-align: center;
+			color: $c2;
+			letter-spacing: 18px;
