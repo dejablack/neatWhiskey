@@ -1,7 +1,7 @@
 
 
 (function() {
-  var qry1;
+  var qry2;
 
   $('.dimensions').html('Width: ' + $(window).width() + 'px');
 
@@ -109,10 +109,10 @@ var process5 = ("#process5");
 
     },
     on: function() {
-      return console.log('Mag On', this.condition);
+      return console.log('processPage On', this.condition);
     },
     off: function() {
-      return console.log('Mag Of', this.condition);
+      return console.log('processPage Off', this.condition);
     }
   });
 

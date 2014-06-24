@@ -1,0 +1,143 @@
+//----------------------------------*\
+// Creativo Tabs
+//----------------------------------*/
+
+article.aboutTabWrap
+	center(max-width = 1210px)
+
+.tab
+	margin-top: 75px; 
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+	line-height: 1.5;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+
+.tabs
+	display: table;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	+below(2)
+		width:0px;
+		span(1)
+	li
+		float: left;
+		line-height: 38px;
+		overflow: hidden;
+		padding: 0;
+		position: relative;
+		+below(2)
+			span(1/2)
+			border-right: 4px dotted $c1;
+			&:first-child
+				border-top: 4px solid white;
+			&:nth-last-child(3)
+				border-right: 0px solid $c1;
+				border-top: 4px solid white;
+			&:last-child
+				border-right: 0px solid $c1;
+
+	a 
+		@extend .pf3;
+		font-size: 1.5em; 
+		background-color: $c2;
+		border-bottom: 4px solid white;
+		color: $atc;
+		display: block;
+		letter-spacing: 0;
+		outline: none;
+		padding: 0 20px;
+		text-decoration: none;
+		-webkit-transition: all 0.25s ease-in-out;
+		-moz-transition: all 0.25s ease-in-out;
+		transition: all 0.25s ease-in-out;
+		border-bottom: 2px solid $green;
+		+below(2)
+			text-align: center;
+			font-size: 1.2em;
+			transition: all 0.0s ease-in-out;
+
+.current a 
+	color: $c2;
+	background: white;
+
+.tab_content
+	cf()
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;  
+	background: $darkG
+	height: 100%;
+	margin-bottom: 20px;
+	min-height: 200px; 
+
+
+.tabs_item
+	transition: opacity .25s $tz1;
+	display: none;
+	padding: 40px 0;
+	//opacity: .2;
+	&:first-child
+		display: block;
+	+below(2)
+			transition: opacity .0s $tz1;
+
+	img
+		span(1/5)
+		shift(1/50)
+		border-radius: 25px; 
+		border: 15px solid $c2;
+		+below(2)
+			float: left;
+			//col(1/3)
+		+below(1)
+			col(1)
+			//shift(-1/3)
+			border: 10px solid $c2;
+
+	.aboutText
+		span(4/5)
+		padding-left: 10px;
+		+below(2)
+			// /col(2/3)
+		+below(1)
+			col(1)
+			padding-left: 8px; 
+
+		h4
+			@extend .pf3;
+			@extend .reset;
+			margin-top: -10px;
+			margin-bottom: 25px;
+			text-decoration: underline; 
+			font-weight: bold;
+			color: white;
+			font-size: 3em;
+			+below(2)
+				font-size: 2.5em;
+			+below(1)
+				text-align: center
+				margin-bottom: 30px; 
+		p
+			@extend .pf2;
+			@extend .reset;
+			font-size: 1.5em; 
+			margin-top: -20px;
+			padding-bottom: 20px;
+			+below(2)
+				font-size: 1.2em;
+			+below(1)
+				text-align: center
+
+////-------------------*\
+//// Animation for tabs
+////-------------------*/
+.aboutText
+	animation: fadeInUp 1s
+	
+.tabs_item
+	img
+		animation: fadeInRight 1.5s
