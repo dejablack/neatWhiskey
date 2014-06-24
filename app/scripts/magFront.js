@@ -1,4 +1,17 @@
 
+
+(function() {
+  var qry1;
+
+  $('.dimensions').html('Width: ' + $(window).width() + 'px');
+
+  $(window).resize(function() {
+    return $('.dimensions').html('Width: ' + $(this).width() + 'px');
+  });
+
+  qry1 = Harvey.attach('screen and (min-width:605px)', {
+    setup: function() {
+
 //Var mag first
 
 var quote = document.getElementById("quote"),
@@ -58,4 +71,13 @@ function randomInteger(min, max){
 	tl.to(iconTwo, .5,  {css:{autoAlpha:1, scale:'1'}, ease:Back.easeOut});
 	tl.to(iconThree, .5,  {css:{autoAlpha:1, scale:'1'}, ease:Back.easeOut});
 	tl.to(indexBtn, .75,  {css:{autoAlpha:1, scale:'1'}});
+    },
+    on: function() {
+      return console.log('Mag On', this.condition);
+    },
+    off: function() {
+      return console.log('Mag Of', this.condition);
+    }
+  });
 
+}).call(this);

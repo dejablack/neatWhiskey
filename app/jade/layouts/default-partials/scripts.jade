@@ -10,19 +10,33 @@ script(src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.8/TweenMax.min.js")
 //- Not a clean solution but it will do
 // build:js scripts/vendor.js 
 // bower:js
-script(src='bower_components/slicknav/jquery.slicknav.min.js')
-script(src='bower_components/FitText.js/jquery.fittext.js')
-script(src='scripts/vendor/SplitText.min.js')
 script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.min.js')
 script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.debug.js')
+script(src='bower_components/FlowType.JS/flowtype.js')
+script(src='bower_components/matchHeight/jquery.matchHeight.js')
+script(src='bower_components/fastclick/lib/fastclick.js')
 // endbower 
 // endbuild  
 
+// build:js scripts/text.js 
+// bower:js
+script(src='bower_components/FitText.js/jquery.fittext.js')
+script(src='scripts/vendor/mediaBreakpoints.js')
+script(src='scripts/vendor/SplitText.min.js')
+script(src='bower_components/FlowType.JS/flowtype.js')
+// endbower 
+// endbuild  
 
 // build:js scripts/main.js 
 script(src='scripts/main.js')
+//script(src='scripts/websiteUpdate.js')
 script(src='scripts/magFront.js')
 script(src='scripts/cssAnimate.js')
 script(src='scripts/fitTextVar.js')
 script(src='scripts/parallax.js')
+// endbuild 
+
+
+// build:js scripts/components.js
+script(src='scripts/components/lavaLampTabs.js')
 // endbuild 

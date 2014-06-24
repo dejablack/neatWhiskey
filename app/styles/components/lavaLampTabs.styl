@@ -1,0 +1,60 @@
+
+//----------------------------------*\
+// Globals
+//----------------------------------*/
+
+$tabWidth = 10%;
+$tabTransition = all .3s ease-in;
+$contentBG = #295;
+$tabTextColor = $c1;
+$tabTextBG = $c2;
+
+.tabs
+  width:100%;
+  margin:10px auto;
+  position:relative;
+
+
+.tab-buttons span
+  color:$tabTextColor;
+  background:$tabTextBG;
+  cursor:pointer;
+  border-bottom:2px solid #ddd;
+  display:block;
+  width:$tabWidth;
+  float:left;
+  text-align:center;
+  height:40px;
+  line-height:40px;
+
+.tab-content
+  border-bottom:3px solid darken($contentBG, 10);
+  padding:15px;
+  background:$contentBG;
+  display:inline-block;
+  color:#333;
+
+#lamp
+  width:$tabWidth;
+  height:10px;
+  background:#333;
+  display:block;
+  position:absolute;
+  top:40px;
+  transition: $tabTransition;
+
+	.content1
+	  left:0;
+	  transition: $tabTransition;
+
+	.content2
+	  left:$tabWidth;
+	  transition: $tabTransition;
+
+	.content3
+	  left:$tabWidth*2;
+	  transition: $tabTransition;
+
+	.content4
+	  left:$tabWidth*3;
+	  transition: $tabTransition;

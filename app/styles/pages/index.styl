@@ -17,6 +17,8 @@ section.splashContent
 //----------------------------------*/
 
 #magIndex
+	+below(2)
+		display: none;
 	@extend .pf1;
 	margin-top: 150px;
 	color: white;
@@ -64,33 +66,37 @@ section.splashContent
 //// Titles
 ////-------------------*/
 #secondComing
-	//visibility: hidden;
-	margin-top: -875px; 
+	margin-top: -850px; 
 	center(max-width = 1410px)
+	+below(2)
+		margin-top: -100px; 
+		display: block;
 
 .indexTitle
 	margin-top: 80px;
 	text-align: center
-	h1
-		@extend .reset;
-		@extend .pf2;
-		color: white;
+	color: white;
+	@extend .reset;
+	@extend .pf2;
+	+below(2)
+		col(1)
 
 .indexDescription
 	text-align: center
-	margin-top: 15px;
-	h2
-		@extend .reset;
-		@extend .pf1;
-		color: white;
+	margin-top: 45px;
+	color: white;
+	@extend .reset;
+	@extend .pf1;
+
 
 .indexLocation
 	text-align: center
 	margin-top: 15px;
-	h2
-		@extend .reset;
-		@extend .pf2;
-		color: white;
+	color: white;
+	margin-bottom: 60px;
+	@extend .reset;
+	@extend .pf2;
+
 
 ////-------------------*\
 //// Icons
@@ -101,27 +107,36 @@ section.splashContent
 	color: white;
 	@extend .pf1;
 	img
-		width: 100px;
+		width: 85px;
 
 	.frendily
 		col(1/3)
+		&:hover
+			animation: bounce 1s
 
 	.professional
 		col(1/3)
-
+		&:hover
+			animation: bounce 1s
 	.suitable
 		col(1/3)
-
+		&:hover
+			animation: bounce 1s
 ////-------------------*\
 //// Contact Buttton
 ////-------------------*/
 
 .indexBtn
-	col(1/1.5)
-	shift(1/6)
-	margin-top: 55px;
+	col(1/2)
+	shift(1/4)
+	@extend .reset;
+	@extend .sf1;
+	letter-spacing: 15px;
+	margin-top: 85px;
 	height: 125px;
 	border: 3px solid white;
 	text-align: center
 	color: white;
+
+
 

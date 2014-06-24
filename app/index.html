@@ -15,6 +15,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="">
     <link href="//fonts.googleapis.com/css?family=Titillium+Web:600,200,300" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -22,8 +23,10 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
+  <!--include default-partials/websiteUpdate-->
   <!-- Nav-->
-  <header class="header">
+  <header class="headerDesktop">
+    <div class="headerShadow"></div>
     <div class="headerTitle">
       <div class="headDivide">
         <div class="creativo">
@@ -90,7 +93,9 @@
   <div id="aboutPX1">
     <div class="mobilePX1">
       <div class="mobilePX1Shadow">
+        <div class="top"></div>
         <h1>About</h1>
+        <div class="bottom"></div>
       </div>
     </div>
     <section id="parallaxPX1">
@@ -112,24 +117,25 @@
     </section>
     <div id="aboutBottomWrap">
       <aside class="aboutIconWrap">
-        <div class="visualID">
+        <div class="visualID iconAnimation">
           <div class="icon-eye aIcon"></div>
-          <h2>Visual Identity</h2>
+          <h2 id="iconTitle1">Visual Identity</h2>
         </div>
-        <div class="webDesign">
+        <div class="webDesign iconAnimation">
           <div class="icon-desktop aIcon"></div>
-          <h2>Wed Design</h2>
+          <h2 id="iconTitle2">Wed Design</h2>
         </div>
-        <div class="mobileDesign">
+        <div class="mobileDesign iconAnimation">
           <div class="icon-mobile aIcon"></div>
-          <h2>Mobile Design</h2>
+          <h2 id="iconTitle3">Mobile Design</h2>
         </div>
-        <div class="development">
+        <div class="development iconAnimation">
           <div class="icon-pencil aIcon"></div>
-          <h2>Development</h2>
+          <h2 id="iconTitle4">Development</h2>
         </div>
       </aside>
       <article class="aboutTabWrap">
+        <!--include components/lavaLampTabs-->
         <div class="tab">
           <ul class="tabs">
             <li class="visual"><a href="#">Visual</a></li>
@@ -137,24 +143,61 @@
             <li><a href="#">Mobile</a></li>
             <li><a href="#">Mobile</a></li>
           </ul>
-          <div class="tab_content">
-            <div class="tabs_item"><img src="http://d13yacurqjgara.cloudfront.net/users/5411/screenshots/1413345/wellv2.png">
+          <div data-mh="aBox" class="tab_content">
+            <div data-mh="aBox" class="tabs_item">
               <div class="aboutText">
-                <h4>Tab 01 Neque ipsum dolor.</h4>
-                <p>Consectetur adipisicing elit..</p>
-              </div>
+                <h4>Visual Identity</h4>
+                <p id="flowAbout">
+                  From small businesses starting to develop their presence online, 
+                  to individuals working within large organisations, it's important 
+                  to maintain a solid personal brand online. Your brand and identity 
+                  are key drivers of your company’s perception. Here at Creativo we 
+                  mix creativity with our design talent to produce branding and 
+                  identity that is both purposeful and unforgettable. Your company 
+                  will catch the eye ads, event posters, and business cards that are 
+                  attractive to your audience. From color schemes to logo designs and 
+                  everything inbetween we have you covered.
+                </p>
+              </div><img src="http://d13yacurqjgara.cloudfront.net/users/5411/screenshots/1413345/wellv2.png">
             </div>
-            <div class="tabs_item"><img src="http://d13yacurqjgara.cloudfront.net/users/424765/screenshots/1412407/ezyinsights.jpg">
+            <div data-mh="aBox" class="tabs_item">
               <div class="aboutText">
-                <h4>Tab 01 Neque ipsum dolor.</h4>
-                <p>Consectetur adipisicing elit..</p>
-              </div>
+                <h4>Web Design</h4>
+                <p id="flowAbout2">
+                  In today's technology driven world your website will be the first point 
+                  and time a potential customer interacts with your business. Needless to say, 
+                  it’s of utmost importance to make a great impression online just as your 
+                  business does at its brick and mortar location. You need a website that grabs 
+                  your potential customers attention, tells your story, and build trust through 
+                  an online connection. Luckily for you this is what we do best. We develop websites 
+                  that turn traffic into leads, leads into sales and customers into raving fans.
+                </p>
+              </div><img src="http://d13yacurqjgara.cloudfront.net/users/424765/screenshots/1412407/ezyinsights.jpg">
             </div>
-            <div class="tabs_item"><img src="http://d13yacurqjgara.cloudfront.net/users/347667/screenshots/1412641/untitled-1.jpg">
+            <div data-mh="aBox" class="tabs_item">
               <div class="aboutText">
-                <h4>Tab 01 Neque ipsum dolor.</h4>
-                <p>Consectetur adipisicing elit..</p>
-              </div>
+                <h4>Mobile Design</h4>
+                <p id="flowAbout">
+                  As a fully responsive web design agency we know the importance of making sure your 
+                  website provides an optimal viewing experience across a wide range of devices. 
+                  So whether a customer views your site on a smartphone, tablet, or a 28” monitor you 
+                  can rest rest assured they will have the best user experience possible. Furthermore, 
+                  we integrate functionally responsive elements into your website like click-to-call functionality, 
+                  making your customers just a tap away.
+                </p>
+              </div><img src="http://d13yacurqjgara.cloudfront.net/users/347667/screenshots/1412641/untitled-1.jpg">
+            </div>
+            <div data-mh="aBox" class="tabs_item">
+              <div class="aboutText">
+                <h4>Development</h4>
+                <p id="flowAbout">
+                  Developing your online presence does not start and end at building a website or mobile 
+                  application. We provide valuable insight and  about social media, SEO, web analytics, 
+                  and other up-and-coming technologies.We also take care of the standards compliancy of 
+                  your web site, the content management system, the e-commerce system, the web and database 
+                  development and the hosting, domain name registration, email and everything else in between.
+                </p>
+              </div><img src="http://d13yacurqjgara.cloudfront.net/users/347667/screenshots/1412641/untitled-1.jpg">
             </div>
           </div>
         </div>
@@ -203,12 +246,12 @@
         <div class="downArrowWrap">
           <div class="downArrow"></div>
         </div>
-        <div class="pDescript">
+        <div data-mh="pBox" class="pDescript">
           <div class="numberBox">
             <h2>1</h2>
           </div>
           <div class="descriptBox">
-            <p>
+            <p id="flowProcess">
               Before we get the ball rolling, we believe it’s critical to have an in person 
               conversation to establish your needs, goals, and dreams. 
               This first meeting will help us create a baseline to work from and build upon during the next stages. 
@@ -226,12 +269,12 @@
         <div class="downArrowWrap">
           <div class="downArrow"></div>
         </div>
-        <div class="pDescript">
+        <div data-mh="pBox" class="pDescript">
           <div class="numberBox">
             <h2>2</h2>
           </div>
           <div class="descriptBox">
-            <p>
+            <p id="flowProcess">
               We encounter many customers and competitors that at this stage are ready 
               to just dive in headfirst and begin building. Unfortunately, it is not quite that easy. 
               Before beginning we conduct market research to validate the proposed project. 
@@ -250,12 +293,12 @@
         <div class="downArrowWrap">
           <div class="downArrow"></div>
         </div>
-        <div class="pDescript">
+        <div data-mh="pBox" class="pDescript">
           <div class="numberBox">
             <h2>3</h2>
           </div>
           <div class="descriptBox">
-            <p>
+            <p id="flowProcess">
               Good projects come from good ideas. 
               You are experts when it come to your business and customers and we are the experts when it comes to 
               digital multimedia solutions. In this step we will build on our initial foundation with the 
@@ -266,7 +309,7 @@
           </div>
         </div>
       </div>
-      <div class="process3 pMIcon">
+      <div class="process4 pMIcon">
         <div class="icon-chat-inv icon">
           <div class="processBoxTitle">
             <h1>Storming our Brains</h1>
@@ -275,12 +318,37 @@
         <div class="downArrowWrap">
           <div class="downArrow"></div>
         </div>
-        <div class="pDescript">
+        <div data-mh="pBox" class="pDescript">
           <div class="numberBox">
-            <h2>3</h2>
+            <h2>4</h2>
           </div>
           <div class="descriptBox">
-            <p>
+            <p id="flowProcess">
+              Good projects come from good ideas. 
+              You are experts when it come to your business and customers and we are the experts when it comes to 
+              digital multimedia solutions. In this step we will build on our initial foundation with the 
+              use of visual aids such as wireframe and Photoshop mockups to give you the ability to visually 
+              see the flow and architecture of your new project. This will grant us the ability to work together 
+              and make modifications before the first building block is laid. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="process5 pMIcon">
+        <div class="icon-gift icon">
+          <div class="processBoxTitle">
+            <h1>Delving the product</h1>
+          </div>
+        </div>
+        <div class="downArrowWrap">
+          <div class="downArrow"></div>
+        </div>
+        <div data-mh="pBox" class="pDescript">
+          <div class="numberBox">
+            <h2>4</h2>
+          </div>
+          <div class="descriptBox">
+            <p id="flowProcess">
               Good projects come from good ideas. 
               You are experts when it come to your business and customers and we are the experts when it comes to 
               digital multimedia solutions. In this step we will build on our initial foundation with the 
@@ -301,31 +369,35 @@
       <h2>Box3</h2>
     </div>
   </section>
-  <!-- Footer-->
-  <footer class="footer">
-    <p>&copy; 2015 Mysite. All rights reserved.</p>
-    <nav>
-      <ul>
-        <li class="privacy-policy"><a href="privacy-policy.html">Privacy Policy</a></li>
-      </ul>
-    </nav>
-  </footer>
+  <!--include default-partials/footer-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.8/TweenMax.min.js"></script>
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js-->
-  <script src="bower_components/slicknav/jquery.slicknav.min.js"></script>
-  <script src="bower_components/FitText.js/jquery.fittext.js"></script>
-  <script src="scripts/vendor/SplitText.min.js"></script>
   <script src="bower_components/ScrollMagic/js/jquery.scrollmagic.min.js"></script>
   <script src="bower_components/ScrollMagic/js/jquery.scrollmagic.debug.js"></script>
+  <script src="bower_components/FlowType.JS/flowtype.js"></script>
+  <script src="bower_components/matchHeight/jquery.matchHeight.js"></script>
+  <script src="bower_components/fastclick/lib/fastclick.js"></script>
+  <!-- endbower -->
+  <!-- endbuild  -->
+  <!-- build:js scripts/text.js -->
+  <!-- bower:js-->
+  <script src="bower_components/FitText.js/jquery.fittext.js"></script>
+  <script src="scripts/vendor/mediaBreakpoints.js"></script>
+  <script src="scripts/vendor/SplitText.min.js"></script>
+  <script src="bower_components/FlowType.JS/flowtype.js"></script>
   <!-- endbower -->
   <!-- endbuild  -->
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
+  <!--script(src='scripts/websiteUpdate.js')-->
   <script src="scripts/magFront.js"></script>
   <script src="scripts/cssAnimate.js"></script>
   <script src="scripts/fitTextVar.js"></script>
   <script src="scripts/parallax.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/components.js-->
+  <script src="scripts/components/lavaLampTabs.js"></script>
   <!-- endbuild -->
 </html>

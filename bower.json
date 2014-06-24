@@ -9,6 +9,9 @@
     "holderjs": "~2.3.2",
     "slicknav": "*",
     "FitText.js": "*",
-    "ScrollMagic": "~1.0.8"
+    "ScrollMagic": "~1.0.8",
+    "FlowType.JS": "*",
+    "matchHeight": "~0.5.2",
+    "fastclick": "~1.0.2"
   }
 }
