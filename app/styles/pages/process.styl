@@ -5,14 +5,16 @@
 //----------------------------------*/
 
 #process
+	cf()
 	background: $c3;
-	+tablet(900px)
-		background: green;
-	height: 2100px;
+	min-height: 2100px;
 	section
 		center(max-width = 1410px)
+		cf()
 	article
 		center(max-width = 1220px)
+		cf()
+		margin-bottom: 45px; 
 ////-------------------*\
 //// Color
 ////-------------------*/
@@ -103,6 +105,9 @@ $arrowR = #c0392b;
 			@extend .dArrow;
 			margin-bottom: 20px;
 			margin-top: -10px;
+			+below(2)
+				margin-bottom: -20px;
+				margin-top: 0px;
 	.pDescript
 		col(1)
 		background: rgba(235, 60, 50, 0.79);
@@ -121,6 +126,8 @@ $arrowR = #c0392b;
 				background: $c3;
 				color: #444;
 				border-radius: 3px;
+				+below(2)
+					display: none;
 		.descriptBox
 			@extend .pf2;
 			height: 100%;
@@ -130,6 +137,10 @@ $arrowR = #c0392b;
 			font-size: 1.3em;
 			p 
 				span(11/12)
+			+below(2)
+				shift(.5/12)
+				col(1)
+				text-align: center;
 
 
 .process2
@@ -164,11 +175,15 @@ $arrowR = #c0392b;
 		col(1, uncycle: 2, cycle: 1)
 		.downArrowWrap
 			width: 160px;
+			+below(2)
+				width: 100px;
 			.downArrow
 				width: 50px;
 				@extend .dArrow;
 					border-width: 80px 80px 0 80px;
 					//margin: auto 60px;
+					+below(2)
+						border-width: 50px 50px 0 50px;
 		h2
 			@extend .sf1;
 		.descriptBox
