@@ -1,0 +1,102 @@
+
+
+//----------------------------------*\
+// Global
+//----------------------------------*/
+
+#contact
+	background: $c4; 
+	min-height: 900px;
+
+	section
+		center(max-width = 1110px)
+
+$blue = rgba(49,108,126,.9);
+$green = rgba(39,174,96,.9);
+
+//----------------------------------*\
+// Bam - phone and email / logo
+//----------------------------------*/
+////-------------------*\
+//// Phone
+////-------------------*/
+.phoneDisplay
+	margin-top: 75px;
+	height: 600px;
+	background: rgba(49,108,126,.9);
+	border-bottom: 10px solid white;
+	border-top-left-radius: 45px;
+	border-top-right-radius: 45px;
+
+	.circleWrap
+		cf()
+		align()
+		position: relative;
+		top: 450px;
+
+	.circle
+		align()
+		position: relative
+		size: 400px;
+		border-radius: 50%; 
+		background: green;
+
+		img
+			align()
+			position: relative
+			border-radius: 50%;  
+
+
+	.phone
+		@extend .reset;
+		position: relative
+		top: 105px;
+		h3
+			span(1/2)
+			@extend .sf2;
+			padding-left: 25px;
+			font-size: 5em
+			color: white;
+			span
+				padding-right: 36px;
+				font-size: 1.6em;
+				line-height: 5px;
+				color: darken($blue, 10)
+
+		#pIcon
+			span(1/8)
+			shift(1/2.6)
+			position: relative
+			color: darken($blue, 10);
+			font-size: 4.5em;
+
+////-------------------*\
+//// Email
+////-------------------*/
+
+.emailDisplay
+	background: $green;
+	height: 95px;
+	border-bottom-left-radius: 45px;
+	border-bottom-right-radius: 45px;
+
+	h3
+		span(1/2)
+		@extend .sf2;
+		padding-left: 25px;
+		margin-top: 10px;
+		font-size: 5em
+		color: white;
+		span.at
+			color: darken($green, 10); 
+		span.dot
+			font-size: 1.6em
+			line-height: 5px;
+			color: darken($green, 10);
+	#eIcon
+		span(1/8)
+		shift(1/2.65)
+		position: relative
+		color: darken($green, 10);
+		font-size: 5em;
+		margin-top: 10px;
