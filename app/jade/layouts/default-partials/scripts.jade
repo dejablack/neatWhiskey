@@ -6,22 +6,26 @@ script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
 script(src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.8/TweenMax.min.js")
 
 
+
+// build:js scripts/GASP.js
+script(src='scripts/parallax.js')
+script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.min.js')
+// endbuild
 //- Script Injects
 //- Not a clean solution but it will do
 // build:js scripts/vendor.js 
 // bower:js
-script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.min.js')
-script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.debug.js')
-script(src='bower_components/FlowType.JS/flowtype.js')
 script(src='bower_components/matchHeight/jquery.matchHeight.js')
+script(src='scripts/vendor/mediaBreakpoints.js')
 script(src='bower_components/fastclick/lib/fastclick.js')
 // endbower 
 // endbuild  
 
+
+
 // build:js scripts/text.js 
 // bower:js
 script(src='bower_components/FitText.js/jquery.fittext.js')
-script(src='scripts/vendor/mediaBreakpoints.js')
 script(src='scripts/vendor/SplitText.min.js')
 script(src='bower_components/FlowType.JS/flowtype.js')
 // endbower 
@@ -29,7 +33,6 @@ script(src='bower_components/FlowType.JS/flowtype.js')
 
 // build:js scripts/main.js 
 script(src='scripts/main.js')
-//script(src='scripts/websiteUpdate.js')
 script(src='scripts/cssAnimate.js')
 script(src='scripts/fitTextVar.js')
 // endbuild 
@@ -38,11 +41,11 @@ script(src='scripts/fitTextVar.js')
 script(src='scripts/magFront.js')
 // endbuild
 
-// build:js scripts/GASP.js
-script(src='scripts/parallax.js')
-// endbuild
 
 // build:js scripts/tween.js
 script(src='scripts/components/creativoTabs.js')
 script(src='scripts/processPage.js')
-// endbuild  
+// endbuild
+
+//script(src='scripts/websiteUpdate.js')
+//script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.debug.js')

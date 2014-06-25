@@ -19,7 +19,9 @@ $textShadow = rgb(23, 23, 23) -1px 1px 0px, rgb(24, 24, 24) -2px 2px 0px, rgb(25
 		overflow: hidden;
 		+below(2)
 			display: none;
-
+		#big
+			margin-top: -35px; 
+			letter-spacing: 20px;
 
 	#parallaxPX1 h3
 		@extend .sf1;
@@ -31,6 +33,7 @@ $textShadow = rgb(23, 23, 23) -1px 1px 0px, rgb(24, 24, 24) -2px 2px 0px, rgb(25
 		top: 50%;
 		width: 100%;
 		line-height: 80px;
+		opacity: .85;
 		+below(2)
 			display: none;
 
@@ -189,5 +192,112 @@ $textShadow = rgb(23, 23, 23) -1px 1px 0px, rgb(24, 24, 24) -2px 2px 0px, rgb(25
 			padding-left: 15px;
 			text-shadow: $textShadow;
 			text-align: center;
-			color: $c2;
+			color: $c3;
 			letter-spacing: 18px;
+
+
+
+
+
+
+
+
+
+//----------------------------------*\
+// PX3
+//----------------------------------*/
+
+#contactPX3
+	#parallaxPX3
+		margin-bottom: 0px;
+		position: relative;
+		overflow: hidden;
+		+below(2)
+			display: none;
+
+	#parallaxPX3 h1
+		font-size: 80px;
+		text-align: center;
+		margin: -40px 0 0 0;
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		line-height: 80px;
+		+below(2)
+			display: none;
+
+	#parallaxPX3 #parallaxBGPX3
+		position: relative;
+		height: 300px;
+		width: 100%;
+		background-image: url("../images/px3-CZ.jpg");
+		+below(2)
+			display: none;
+
+	#parallaxBGPX3
+		background-size: cover; 
+		background-position:0 100%;
+		+below(2)
+			display: none;
+
+	#parallaxBGPX3 .top
+		height: 10px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		background-image: url("../images/parallax_shadow_top.png");
+		+below(2)
+			display: none;
+
+	#parallaxBGPX3 .bottom 
+		height: 10px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		background-image: url("../images/parallax_shadow_bottom.png");
+		+below(2)
+			display: none;
+////-------------------*\
+//// Mobile Styles
+////-------------------*/
+
+.mobilePX3Shadow
+	display: none;
+	+below(2)
+		display: block;
+		background: $g2;
+	.top
+		height: 10px;
+		width: 100%;
+		top: 0;
+		background-image: url("../images/parallax_shadow_top.png");
+	.bottom
+		height: 10px;
+		width: 100%;
+		bottom: 0;
+		background-image: url("../images/parallax_shadow_bottom.png");
+
+.mobilePX3
+	display: none;
+	+below(2)
+		display: block;
+		h1
+			@extend .reset;
+			@extend .sf1;
+			padding-top: 30px;
+			padding-bottom: 40px;
+			padding-left: 15px;
+			text-shadow: $textShadow;
+			text-align: center;
+			color: $c4;
+			letter-spacing: 18px;
+
+
+
+#px3Title
+	@extend .sf1;
+	color: $c3;
+
+
+.px3Animate
+	animation: bounce 4s

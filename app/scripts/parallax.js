@@ -32,7 +32,7 @@ $(document).ready(function($) {
     var tween = new TimelineMax ()
         .add([
             TweenMax.fromTo("#parallaxPX1 #big", 1, {scale: 2, alpha: 0.3, top: "100%"}, {top: "0%", ease: Linear.easeNone}),
-            TweenMax.to("#parallaxBGPX1", 1, {backgroundPosition: "0% -0%", ease:Sine.easeInOut})
+            TweenMax.to("#parallaxBGPX1", 1, {backgroundPosition: "0% -0%"})
         ]);
 
     // build scene
@@ -42,7 +42,7 @@ $(document).ready(function($) {
                     .addTo(controller);
 
     // show indicators (requires debug extension)
-    scene.addIndicators();
+    //scene.addIndicators();
     //
 });
 
@@ -59,6 +59,45 @@ $(document).ready(function($) {
 
     // build scene
     var scene = new ScrollScene({triggerElement: "#parallaxPX2", duration: 1400, offset: -400})
+                    .setTween(tween)
+                    .triggerHook("onCenter")
+                    .addTo(controller);
+
+    // show indicators (requires debug extension)
+    // scene.addIndicators();
+});
+
+
+
+//paralax3
+$(document).ready(function($) {
+    // build tween
+    var tween = new TimelineMax ()
+        .add([
+            TweenMax.to("#parallaxBGPX3", 1, {backgroundPosition: "0% -0%", ease:Sine.easeInOut})
+        ]);
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "#parallaxPX3", duration: 1400, offset: -400})
+                    .setTween(tween)
+                    .triggerHook("onCenter")
+                    .addTo(controller);
+
+    // show indicators (requires debug extension)
+    // scene.addIndicators();
+});
+
+$(document).ready(function($) {
+    // build tween
+    var px3Title = $('#px3Title')
+    	splitPx3Title = new SplitText(px3Title, {type:"chars"});
+    var tween = new TimelineMax ()
+        .add([
+        	TweenMax.staggerTo("#px3Title > div", 0.0001, {css:{className:'+=px3Animate'}}, 0.2),
+        ]);
+
+    // build scene
+    var scene = new ScrollScene({triggerElement: "#parallaxPX3", duration: 700, offset: -400})
                     .setTween(tween)
                     .triggerHook("onCenter")
                     .addTo(controller);
