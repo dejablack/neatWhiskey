@@ -6,6 +6,8 @@ section.splashContent
 	background: $c1;
 	min-height: 1050px;
 	height: 100vh;
+	+below(2)
+		display: none;
 
 #indexWrap
 	center(max-width = 1410px)
@@ -13,7 +15,7 @@ section.splashContent
 
 
 //----------------------------------*\
-// Mag Index
+// Mag Indexg
 //----------------------------------*/
 
 #magIndex
@@ -22,8 +24,8 @@ section.splashContent
 	@extend .pf1;
 	margin-top: 150px;
 	color: white;
-	height: 100%;
 	overflow: hidden;
+	min-height: 1000px;
 	#quote.split
 		text-align: center;
 		div
@@ -68,18 +70,12 @@ section.splashContent
 #secondComing
 	margin-top: -850px; 
 	center(max-width = 1410px)
-	+below(2)
-		margin-top: -100px; 
-		display: block;
-
 .indexTitle
 	margin-top: 80px;
 	text-align: center
 	color: white;
 	@extend .reset;
 	@extend .pf2;
-	+below(2)
-		col(1)
 
 .indexDescription
 	text-align: center

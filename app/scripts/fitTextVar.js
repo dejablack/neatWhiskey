@@ -17,13 +17,16 @@ jQuery(".icons").fitText(3, { minFontSize: '20px', maxFontSize: '60px' })
 //ContactButton
 jQuery(".indexBtn").fitText(1.2, { minFontSize: '20px', maxFontSize: '180px' })
 
-
+//mobileIndex
+jQuery("#mobileSplashLogo").fitText(.3, { minFontSize: '20px', maxFontSize: '80px' })
+jQuery("#mobileSplashDiscOne").fitText(1.2, { minFontSize: '20px', maxFontSize: '80px' })
+jQuery("#mobileSplashDiscTwo").fitText(1.2, { minFontSize: '20px', maxFontSize: '80px' })
 //About
 
 //aboutTitle1
 jQuery(".aboutTitle1").fitText(1, { minFontSize: '20px', maxFontSize: '180px' })
 
-jQuery(".aboutTitle2").fitText(1, { minFontSize: '20px', maxFontSize: '180px' })
+jQuery(".aboutTitle2").fitText(.55, { minFontSize: '20px', maxFontSize: '180px' })
 
 jQuery(".aboutTitle3").fitText(1, { minFontSize: '20px', maxFontSize: '180px' })
 
