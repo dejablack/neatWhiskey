@@ -1,8 +1,7 @@
 
-
-////-------------------*\
-//// Header Size and such
-////-------------------*/
+//----------------------------------*\
+// Header Size and such
+//----------------------------------*/
 
 header.headerMobile
   z-index: 50
@@ -17,7 +16,12 @@ header.headerMobile
       span(1/6)
 
 ////-------------------*\
-//// Color
+//// General Var
+////-------------------*/
+$headLogoColor = rgba(255, 255, 255, 0.95);
+
+////-------------------*\
+//// General Setting
 ////-------------------*/
 header.headerMobile
   position: fixed  
@@ -35,17 +39,32 @@ header.headerMobile
 
 
 
-header.headerMobile.main-header
+header.headerMobile
   section
-    h1
+    h1#mobileLogo 
+      uppercase()
       @extend .reset;
+      @extend .pf2;
+      font-size: 3em; 
+      letter-spacing: 5px;
+      padding-left: 5px;
+      padding-top: 2px;
+      color:$headLogoColor;
 
 
-
+//----------------------------------*\
+// Hamburger
+//----------------------------------*/
+////-------------------*\
+//// Var.
+////-------------------*/
+$hamburgerColor = rgba(255, 255, 255, 0.80);
+$hamburgerWidth = 50px;
 
 ////-------------------*\
 //// Button Style
 ////-------------------*/
+
 
 /* ========= Menu Icon Base ======== */
 
@@ -54,7 +73,6 @@ header.headerMobile
     #hamburger
       cf()
       z-index: 100;
-      background: green
     	height: 60px;
     	cursor: pointer;
     	display: inline-block;
@@ -69,9 +87,9 @@ header.headerMobile
     	-webkit-tap-highlight-color: transparent;
 
 #hamburger span {
-  width: 50px
-  background: #222222;
-  border-radius: 2em;
+  width: $hamburgerWidth;
+  background: $hamburgerColor;
+  //border-radius: 1em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   height: 0.8em;
@@ -79,6 +97,7 @@ header.headerMobile
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   -webkit-tap-highlight-color: transparent;
+  box-shadow: inset 0px -1px 2px 0px rgba(50, 50, 50, 0.75);
 }
 
 /* ============ MenuIcon ============ */
@@ -231,3 +250,14 @@ $sliding-menu-color-hover = darken($sliding-menu-border-color, 15);
     visibility: visible;
   }
 }
+
+
+
+//----------------------------------*\
+// Header Logo Switch
+//----------------------------------*/
+
+// .greenLogo{
+//   color: $c2 !important;
+//   transition: all .55s $tz1;
+// }
