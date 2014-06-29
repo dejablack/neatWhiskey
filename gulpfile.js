@@ -9,7 +9,6 @@ var gulp = require('gulp'),
     jade = require('gulp-jade'),
     jeet = require('jeet'),
     stylus = require('gulp-stylus'),
-    nib = require('nib'),
     axisCss = require('axis-css'),
     rupture = require('rupture');
 
@@ -25,7 +24,7 @@ gulp.task('jade', function() {
 gulp.task('styles', function () {
     return gulp.src('app/styles/main.styl')
         .pipe(stylus({
-            use:[jeet(),nib(),axisCss(),rupture()],
+            use:[jeet(),axisCss(),rupture()],
             compress: false
         }))
         .pipe($.autoprefixer('last 1 versions'))

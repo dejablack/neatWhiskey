@@ -50,6 +50,25 @@
       </ul>
     </nav>
   </header>
+  <header class="headerMobile main-header">
+    <section>
+      <h1>Creativo</h1>
+    </section>
+    <aside>
+      <div type="button" class="js-menu-trigger sliding-menu-button">
+        <div id="hamburger"><span></span><span></span><span></span></div>
+      </div>
+      <nav class="js-menu sliding-menu-content">
+        <ul>
+          <li><a href="javascript:void(0)">Home</a></li>
+          <li><a href="javascript:void(0)">About</a></li>
+          <li><a href="javascript:void(0)">Process</a></li>
+          <li><a href="javascript:void(0)">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="js-menu-screen menu-screen"></div>
+    </aside>
+  </header>
   <section class="content splashContent">
     <div class="box">
       <div id="indexWrap"></div>
@@ -376,27 +395,7 @@
       <h1 id="px3Title">Contact Us</h1>
     </section>
   </div>
-  <div id="contact">
-    <section>
-      <div class="phoneDisplay">
-        <div class="circleWrap">
-          <div class="circle"><img src="http://lorempixel.com/300/300/" alt=""></div>
-        </div>
-        <div class="phone">
-          <h3>262<span>.</span>443<span>.</span>4015</h3>
-          <div id="pIcon">
-            <div class="icon-phone"></div>
-          </div>
-        </div>
-      </div>
-      <div class="emailDisplay">
-        <h3>info<span class="at">@</span>creativo<span class="dot">.</span>io</h3>
-        <div id="eIcon">
-          <div class="icon-mail-alt"></div>
-        </div>
-      </div>
-    </section>
-  </div>
+  <!--include pages/contact-->
   <section class="content">
     <div class="box box2">
       <h2>Box2</h2>
@@ -428,6 +427,7 @@
   <!-- endbuild  -->
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
+  <script src="scripts/components/mobileNav.js"></script>
   <script src="scripts/cssAnimate.js"></script>
   <script src="scripts/fitTextVar.js"></script>
   <!-- endbuild -->

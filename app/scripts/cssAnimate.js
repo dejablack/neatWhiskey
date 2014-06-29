@@ -105,3 +105,20 @@ win.scroll(function(event) {
   });
   
 });
+
+
+
+
+
+/////////////////////////
+//Contact Form         //
+/////////////////////////
+
+//Name
+$("#text_field").focus(function () {
+  $(".labelName").addClass( "focus" );
+});
+
+$("#text_field").focusout(function () {
+  $(".labelName").removeClass( "focus" );
+});
