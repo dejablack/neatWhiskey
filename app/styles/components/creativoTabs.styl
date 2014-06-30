@@ -107,7 +107,7 @@ article.aboutTabWrap
 		-moz-box-sizing: border-box;
 		-o-box-sizing: border-box;
 		box-sizing: border-box;
-		padding-left: 10px;
+		padding-left: 20px;
 		+below(2)
 			col(1)
 			padding-left: 4px; 
@@ -116,8 +116,8 @@ article.aboutTabWrap
 		h4
 			@extend .pf3;
 			@extend .reset;
-			col(3/4)
-			shift(1/8)
+			col(1/2.8)
+			text-align: center;
 			margin-top: -15px;
 			border-bottom: 6px solid $c2;
 			box-shadow: 0px 2px 2px 0px rgba(39, 174, 96, 0.75);
@@ -129,12 +129,15 @@ article.aboutTabWrap
 			color: white;
 			font-size: 3em;
 			+below(2)
+				col(3/4)
+				shift(1/8)
 				font-size: 2.5em;
 				text-align: center
 				margin-bottom: 30px; 
 		p
 			@extend .pf2;
 			@extend .reset;
+			col(1)
 			font-size: 1.5em; 
 			margin-top: -20px;
 			padding-bottom: 20px;
