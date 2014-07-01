@@ -45,11 +45,11 @@
         </div>
       </div>
       <nav role="navigation">
-        <ul id="menu">
-          <li class="#home"><a href="#home.html">Home</a></li>
-          <li class="#about"><a href="#about.html">About Us</a></li>
-          <li class="#process"><a href="#process.html">Process</a></li>
-          <li class="#contact"><a href="#contact.html">Contact</a></li>
+        <ul id="nav">
+          <li><a href="#section-1" class="current">Home</a></li>
+          <li><a href="#section-2">About Us</a></li>
+          <li><a href="#section-3">Process</a></li>
+          <li><a href="#section-4">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -74,7 +74,7 @@
         <div class="js-menu-screen menu-screen"></div>
       </aside>
     </header>
-    <div class="boxColor box1">
+    <div id="section-1">
       <section class="content splashContent">
         <div id="indexWrap"></div>
         <div id="magIndex">
@@ -113,35 +113,37 @@
           </div>
         </div>
       </section>
+      <div class="boxPosistion box1Color"></div>
+      <section id="mobileSpash">
+        <div class="mobileSplashLogo">
+          <h1 id="mobileSplashLogo">Creativo</h1>
+        </div>
+        <div class="mobileTopBreak"></div>
+        <div id="mobileSplashIcons">
+          <div class="mobileFrendily"><img src="../images/s01.png" alt="Frendily">
+            <h3>Frendily</h3>
+          </div>
+          <div class="mobileSuitable"><img src="../images/s03.png" alt="Suitable">
+            <h3>Suitable</h3>
+          </div>
+          <div class="mobileProfessional"><img src="../images/s02.png" alt="Professional">
+            <h3>Professional</h3>
+          </div>
+        </div>
+        <div class="mobileBottomBreak"></div>
+        <div class="mobileSplashDisc">
+          <h2 id="mobileSplashDiscOne">An Independent Creative</h2>
+          <div class="boxDisc">
+            <h1>Web</h1>
+            <h1>Design</h1>
+            <h1>Studio</h1>
+          </div>
+          <h2 id="mobileSplashDiscTwo">Based In Oconomowoc, WI</h2>
+        </div>
+      </section>
     </div>
-    <section id="mobileSpash">
-      <div class="mobileSplashLogo">
-        <h1 id="mobileSplashLogo">Creativo</h1>
-      </div>
-      <div class="mobileTopBreak"></div>
-      <div id="mobileSplashIcons">
-        <div class="mobileFrendily"><img src="../images/s01.png" alt="Frendily">
-          <h3>Frendily</h3>
-        </div>
-        <div class="mobileSuitable"><img src="../images/s03.png" alt="Suitable">
-          <h3>Suitable</h3>
-        </div>
-        <div class="mobileProfessional"><img src="../images/s02.png" alt="Professional">
-          <h3>Professional</h3>
-        </div>
-      </div>
-      <div class="mobileBottomBreak"></div>
-      <div class="mobileSplashDisc">
-        <h2 id="mobileSplashDiscOne">An Independent Creative</h2>
-        <div class="boxDisc">
-          <h1>Web</h1>
-          <h1>Design</h1>
-          <h1>Studio</h1>
-        </div>
-        <h2 id="mobileSplashDiscTwo">Based In Oconomowoc, WI</h2>
-      </div>
-    </section>
-    <div class="boxColor box2">
+    <div id="section-2">
+      <div class="boxPosistion box2Color"></div>
       <div id="aboutPX1">
         <div class="mobilePX1">
           <div class="mobilePX1Shadow">
@@ -256,7 +258,8 @@
         </div>
       </div>
     </div>
-    <div class="boxColor box3">
+    <div id="section-3">
+      <div class="boxPosistion box3Color"></div>
       <div id="processPX2" class="pageIndicator">
         <div class="mobilePX2">
           <div class="mobilePX2Shadow">
@@ -415,7 +418,8 @@
         </article>
       </div>
     </div>
-    <div class="boxColor box4">
+    <div id="section-4">
+      <div class="boxColorPosistion box4Color"></div>
       <div id="contactPX3" class="pageIndicator">
         <div class="mobilePX3">
           <div class="mobilePX3Shadow">
@@ -546,8 +550,10 @@
   <script src="bower_components/matchHeight/jquery.matchHeight.js"></script>
   <script src="scripts/vendor/mediaBreakpoints.js"></script>
   <script src="bower_components/fastclick/lib/fastclick.js"></script>
+  <script src="scripts/vendor/singlePageNav.js"></script>
+  <script scr="scripts/vendor/singlePageNavSettings.js"></script>
   <!-- endbower -->
-  <!-- endbuild  -->
+  <!-- endbuild-->
   <!-- build:js scripts/text.js -->
   <!-- bower:js-->
   <script src="bower_components/FitText.js/jquery.fittext.js"></script>

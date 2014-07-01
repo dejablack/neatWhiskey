@@ -11,7 +11,7 @@ console.log('\'ello from creativo!');
 ///
 ///
 var $window = $(window)
-var $box = $(".boxColor");
+var $box = $(".boxPosistion");
 var $menus = $(".headerTitle ul");
 
 var currentIndex = 0;

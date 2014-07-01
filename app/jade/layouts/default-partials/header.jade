@@ -16,11 +16,21 @@ header.headerDesktop
 						li Three
 						li Four
 	nav(role="navigation")
-		ul#menu
-			- each page,i in Navigation
-				- if (currentPage === page.link)
-					li(class='#{page.link}').active
-						a(href='#{page.link}.html') #{page.title}
-				- else
-					li(class="#{page.link}")
-						a(href='#{page.link}.html') #{page.title}
+		ul#nav
+			li
+				a.current(href='#section-1') Home
+			li
+				a(href='#section-2') About Us
+			li
+				a(href='#section-3') Process
+			li
+				a(href='#section-4') Contact
+	
+		//- ul#menu
+		//- 	- each page,i in Navigation
+		//- 		- if (currentPage === page.link)
+		//- 			li(class='#{page.link}').active
+		//- 				a(href='#{page.link}.html') #{page.title}
+		//- 		- else
+		//- 			li(class="#{page.link}")
+		//- 				a(href='#{page.link}.html') #{page.title}
