@@ -9,13 +9,17 @@ append mainVars
 
 
 block content
-	include pages/splash
+	.boxColor.box1
+		include pages/splash
 	include pages/mobileSpash
-	include pages/px1
-	include pages/about
-	include pages/px2
-	include pages/process
-	include pages/px3
-	include pages/contact
+	.boxColor.box2
+		include pages/px1
+		include pages/about
+	.boxColor.box3
+		include pages/px2
+		include pages/process
+	.boxColor.box4
+		include pages/px3
+		include pages/contact
 	include pages/components/reModal
 	include pages/components/madeWithLove
