@@ -12,6 +12,7 @@
     "ScrollMagic": "~1.0.8",
     "FlowType.JS": "*",
     "matchHeight": "~0.5.2",
-    "fastclick": "~1.0.2"
+    "fastclick": "~1.0.2",
+    "remodal": "~0.1.6"
   }
 }

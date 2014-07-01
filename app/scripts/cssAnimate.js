@@ -122,3 +122,39 @@ $("#text_field").focus(function () {
 $("#text_field").focusout(function () {
   $(".labelName").removeClass( "focus" );
 });
+
+//Bis
+$("#text_field2").focus(function () {
+  $(".labelBis").addClass( "focus" );
+});
+
+$("#text_field2").focusout(function () {
+  $(".labelBis").removeClass( "focus" );
+});
+
+//Name
+$("#text_field3").focus(function () {
+  $(".labelPhone").addClass( "focus" );
+});
+
+$("#text_field3").focusout(function () {
+  $(".labelPhone").removeClass( "focus" );
+});
+
+//Name
+$("#text_field4").focus(function () {
+  $(".labelEmail").addClass( "focus" );
+});
+
+$("#text_field4").focusout(function () {
+  $(".labelEmail").removeClass( "focus" );
+});
+
+//Message
+$("#text_area").focus(function () {
+  $(".labelMessage").addClass( "focusMessage" );
+});
+
+$("#text_area").focusout(function () {
+  $(".labelMessage").removeClass( "focusMessage" );
+});

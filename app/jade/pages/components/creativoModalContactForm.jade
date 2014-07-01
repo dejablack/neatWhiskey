@@ -1,26 +1,25 @@
-
-form#desktopForm
+form#modalForm
 	fieldset
 		.contactTitle
 			h2 Send Us A Message
-		.formTopWrap
-			p.formName
+		.formModalTopWrap
+			p.formModalName
 				label.labelName(for='text_field') Name
 				input#text_field(type='text', placeholder='Tyler Schultz')
-			p.formBis
+			p.formModalBis
 				label.labelBis(for='text_field') Business
 				input#text_field2(type='text', placeholder='Creativo')
-		.formBottomWrap
-			p.formPhone
+		.formModalBottomWrap
+			p.formModalPhone
 				label.labelPhone(for='text_field') Phone
 				input#text_field3(type='text', placeholder='262.443.4015')
-			p.formEmail
+			p.formModalEmail
 				label.labelEmail(for='text_field') Email
 				input#text_field4(type='text', placeholder='tyler@creativo.io')
-		.formMessageWrap
-			p.formMessage
+		.formModalMessageWrap
+			p.formModalMessage
 				label.labelMessage(for='text_area') Message
 				textarea#text_area(placeholder='Lets grab a cup of coffee and talk shop.')
 		.buttonWrap
-			p.formButton
+			p.formModalButton
 				input.pressButton.lightText.large.square.black(type='submit', value='Submit')
