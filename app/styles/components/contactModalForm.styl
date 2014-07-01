@@ -5,19 +5,19 @@
 ////-------------------*\
 //// Colors
 ////-------------------*/
-$fomrFieldsetBG =  #f4d03f;
-$formTitleColor = #373737;
-$formInputPColor = rgba(255,255,255,.8);
-$formLabelColor = $g2
+$formModalFieldsetBG =  $c1;
+$formModalTitleColor = #373737;
+$formModalInputPColor = rgba(255,255,255,.8);
+$formModalLabelColor = white
 
 
 
 ////-------------------*\
 //// fieldset
 ////-------------------*/
-form#desktopForm
+form#modalForm
 	fieldset
-		background: $fomrFieldsetBG;
+		background: $formModalFieldsetBG;
 		border: 1px solid #ddd;
 		margin: 0 0 .75em;
 		padding: 1.5em
@@ -25,7 +25,7 @@ form#desktopForm
 		margin-top: 50px;
 		min-height: 200px
 
-#desktopForm
+#modalForm
 	::-webkit-input-placeholder
 		color: lighten(#444, 15); 
 	:focus::-webkit-input-placeholder
@@ -44,28 +44,28 @@ form#desktopForm
 //// Title Button
 ////-------------------*/
 
-#desktopForm
+#modalForm
 	.contactTitle
 		col(9/10)
 		shift(1/15)
-		background: $formTitleColor;
+		background: $formModalTitleColor;
 		margin-bottom: 25px;
 		text-align: center;
 		color: white;
 		font-size: 2.5em;
 		padding: 15px;
 		border-radius: 10px;
-		border: 5px solid darken($formTitleColor, 5)
+		border: 5px solid darken($formModalTitleColor, 5)
 
 
 ////-------------------*\
 //// Input Styles
 ////-------------------*/
-.formTopWrap
+.formModalTopWrap
 	cf()
 	margin-top: 50px
 
-.formName{
+.formModalName{
 	col(1/2.5)
 	shift(1/9)
 	label{
@@ -73,7 +73,7 @@ form#desktopForm
 		col(1/2 9/10, cycle: 2)
 		shift(1/4)
 		@extend .sf1;
-		color: $formLabelColor
+		color: $formModalLabelColor
 		transition: all 0.45s ease-out-sine;
 		margin-bottom: 5px;
 		text-align: center;
@@ -83,13 +83,13 @@ form#desktopForm
 	.focus{
 		unshift()
 		transition: all 0.45s ease-out-sine;
-		background: darken($formTitleColor, 5);
+		background: darken($formModalTitleColor, 5);
 		border-radius: 8px;
 		padding: 5px;
 		color: white;
 		text-align-last: center;
 		margin-bottom: 0px;
-		//border: 5px solid darken($formTitleColor, 5)
+		//border: 5px solid darken($formModalTitleColor, 5)
 		} 
 	input{
 		stack()
@@ -98,12 +98,12 @@ form#desktopForm
 		text-align: center;
 		font-size: 2em;
 		border-radius: 2px;
-		background: $formInputPColor;
+		background: $formModalInputPColor;
 		color:  #444;
 		padding: 5px;
 		&:focus{
 			transition: all 0.45s ease-out-sine;
-			border: 5px solid darken($formTitleColor, 5)
+			border: 5px solid darken($formModalTitleColor, 5)
 			background: #444;
 			color: lighten(#444, 55);
 			font-size: 2.5em;
@@ -114,37 +114,37 @@ form#desktopForm
 	}
 }
 
-.formBis
-	@extend .formName
+.formModalBis
+	@extend .formModalName
 	label
 		@extend .sf1;
 
-.formBottomWrap
-	@extend .formTopWrap
+.formModalBottomWrap
+	@extend .formModalTopWrap
 
 
-.formPhone
-	@extend .formName
+.formModalPhone
+	@extend .formModalName
 	margin-bottom: 25px; 
 	label
 		@extend .sf1;
 
-.formEmail
-	@extend .formPhone
+.formModalEmail
+	@extend .formModalPhone
 	label
 		@extend .sf1;
 
 
-.formMessageWrap
+.formModalMessageWrap
 	cf()
-	.formMessage
+	.formModalMessage
 		col(1)
 		label
 			stack()
 			col(1/2)
 			shift(1/4)
 			@extend .sf1;
-			color: $formLabelColor;
+			color: $formModalLabelColor;
 			margin-top: 20px;
 			transition: all 0.45s ease-out-sine;
 			margin-bottom: 10px;
@@ -153,7 +153,7 @@ form#desktopForm
 			letter-spacing: 2px;
 		.focusMessage
 			transition: all 0.45s ease-out-sine;
-			background: darken($formTitleColor, 5);
+			background: darken($formModalTitleColor, 5);
 			border-radius: 8px;
 			padding: 5px;
 			color: white;
@@ -169,12 +169,12 @@ form#desktopForm
 			text-align: center;
 			font-size: 2em;
 			border-radius: 2px;
-			background: $formInputPColor;
+			background: $formModalInputPColor;
 			color:  #444;
 			padding: 5px;
 			&:focus
 				transition: all 0.45s ease-out-sine;
-				border: 5px solid darken($formTitleColor, 5)
+				border: 5px solid darken($formModalTitleColor, 5)
 				height: 150px;
 				background: #444;
 				color: lighten(#444, 55);
@@ -189,7 +189,7 @@ form#desktopForm
 
 .buttonWrap
 	cf()
-	.formButton
+	.formModalButton
 		col(1/2)
 		shift(1/4)
 		margin-top: 25px;

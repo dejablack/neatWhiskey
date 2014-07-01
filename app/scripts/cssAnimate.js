@@ -158,3 +158,53 @@ $("#text_area").focus(function () {
 $("#text_area").focusout(function () {
   $(".labelMessage").removeClass( "focusMessage" );
 });
+
+
+/////////////////////////
+//Contact Modal Form   //
+/////////////////////////
+
+//Name
+$("#text_fieldModal").focus(function () {
+  $(".labelModalName").addClass( "focus" );
+});
+
+$("#text_fieldModal").focusout(function () {
+  $(".labelModalName").removeClass( "focus" );
+});
+
+//Bis
+$("#text_field2Modal").focus(function () {
+  $(".labelModalBis").addClass( "focus" );
+});
+
+$("#text_field2Modal").focusout(function () {
+  $(".labelModalBis").removeClass( "focus" );
+});
+
+//Name
+$("#text_field3Modal").focus(function () {
+  $(".labelModalPhone").addClass( "focus" );
+});
+
+$("#text_field3Modal").focusout(function () {
+  $(".labelModalPhone").removeClass( "focus" );
+});
+
+//Name
+$("#text_field4Modal").focus(function () {
+  $(".labelModalEmail").addClass( "focus" );
+});
+
+$("#text_field4Modal").focusout(function () {
+  $(".labelModalEmail").removeClass( "focus" );
+});
+
+//Message
+$("#text_areaModal").focus(function () {
+  $(".labelModalMessage").addClass( "focusMessage" );
+});
+
+$("#text_areaModal").focusout(function () {
+  $(".labelModalMessage").removeClass( "focusMessage" );
+});
