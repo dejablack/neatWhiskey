@@ -47,7 +47,7 @@ form#desktopForm
 #desktopForm
 	.contactTitle
 		col(9/10)
-		shift(1/15)
+		shift(.5/10)
 		background: $formTitleColor;
 		margin-bottom: 25px;
 		text-align: center;
@@ -66,12 +66,11 @@ form#desktopForm
 	margin-top: 50px
 
 .formName{
-	col(1/2.5)
-	shift(1/9)
+	col(4.5/10)
+	shift(.5/10)
 	label{
 		stack()
-		col(1/2 9/10, cycle: 2)
-		shift(1/4)
+		col(1)
 		@extend .sf1;
 		color: $formLabelColor
 		transition: all 0.45s ease-out-sine;
@@ -141,8 +140,7 @@ form#desktopForm
 		col(1)
 		label
 			stack()
-			col(1/2)
-			shift(1/4)
+			col(1)
 			@extend .sf1;
 			color: $formLabelColor;
 			margin-top: 20px;
@@ -161,8 +159,8 @@ form#desktopForm
 			margin-bottom: 0px;
 		textarea
 			stack()
-			col(8/10 1/2)
-			shift(4.5/40)
+			col(9/10)
+			shift(.5/10)
 			height: 150px;
 			transition: all 0.45s ease-out-sine;
 			border: 2px solid #ddd;
