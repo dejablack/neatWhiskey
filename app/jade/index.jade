@@ -6,25 +6,27 @@ append mainVars
 	- description = 'Da index'
 	- keywords = 'Da keywords'
 	- author = 'T'
-//-boxPosistion for header swithing
-//-boxColor is the color of iteam
 
 block content
 	#section-1
 		include pages/splash
-		.boxPosistion.box1Color
 		include pages/mobileSpash
+		.boxPosistion.box1Color#boxPosistionOverride
 	#section-2
-		.boxPosistion.box2Color
 		include pages/px1
 		include pages/about
+		.boxPosistion.box2Color
 	#section-3
-		.boxPosistion.box3Color
 		include pages/px2
 		include pages/process
+		.boxPosistion.box3Color
 	#section-4
-		.boxColorPosistion.box4Color
 		include pages/px3
 		include pages/contact
+		.boxPosistion.box4Color
 	include pages/components/reModal
 	include pages/components/madeWithLove
+
+//-boxPosistion for header swithing
+//-boxColor is the color of iteam
+//-Styles On Global/color PAge
