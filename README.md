@@ -2,5 +2,5 @@
 </br>
 
 ###Pretty Typical Gulp Commnands
-+Gulp Watch for dev
-+Gulp Build for production
+1. Gulp Watch for dev
+2. Gulp Build for production
