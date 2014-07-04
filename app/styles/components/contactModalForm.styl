@@ -78,15 +78,17 @@ form#modalForm
 		text-align: center;
 		font-size: 2em;
 		letter-spacing: 2px;
+		border-radius: 4px;
 		}
 	.focus{
 		unshift()
+		col(1/2.5)
 		transition: all 0.45s ease-out-sine;
 		background: darken($formModalTitleColor, 5);
 		border-radius: 8px;
 		padding: 5px;
 		color: white;
-		text-align-last: center;
+		text-align: center;
 		margin-bottom: 0px;
 		//border: 5px solid darken($formModalTitleColor, 5)
 		} 
@@ -100,6 +102,7 @@ form#modalForm
 		background: $formModalInputPColor;
 		color:  #444;
 		padding: 5px;
+		border-radius: 4px;
 		&:focus{
 			transition: all 0.45s ease-out-sine;
 			border: 5px solid darken($formModalTitleColor, 5)
@@ -140,7 +143,8 @@ form#modalForm
 		col(1)
 		label
 			stack()
-			col(1)
+			col(1/2)
+			shift(1/4)
 			@extend .sf1;
 			color: $formModalLabelColor;
 			margin-top: 20px;
@@ -149,13 +153,16 @@ form#modalForm
 			text-align: center;
 			font-size: 2em;
 			letter-spacing: 2px;
+			border-radius: 8px;
 		.focusMessage
+			col(1/2)
+			shift(1/4)
 			transition: all 0.45s ease-out-sine;
 			background: darken($formModalTitleColor, 5);
 			border-radius: 8px;
 			padding: 5px;
 			color: white;
-			text-align-last: center;
+			text-align: center;
 			margin-bottom: 0px;
 		textarea
 			stack()
@@ -170,6 +177,7 @@ form#modalForm
 			background: $formModalInputPColor;
 			color:  #444;
 			padding: 5px;
+			border-radius: 4px;
 			&:focus
 				transition: all 0.45s ease-out-sine;
 				border: 5px solid darken($formModalTitleColor, 5)
