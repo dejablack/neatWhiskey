@@ -47,7 +47,7 @@ $textShadow = rgb(23, 23, 23) -1px 1px 0px, rgb(24, 24, 24) -2px 2px 0px, rgb(25
 			display: none;
 
 	#parallaxBGPX1
-		background-size: cover; 
+		background-size: 100%;
 		background-position:0 100% ;
 		+below(2)
 			display: none;
@@ -120,7 +120,10 @@ $textShadow = rgb(23, 23, 23) -1px 1px 0px, rgb(24, 24, 24) -2px 2px 0px, rgb(25
 			display: none;
 
 	#parallaxPX2 h3
-		font-size: 80px;
+		@extend .sf1;
+		color: $c3; 
+		//color: rgba(235, 149, 50, 0.78);
+		font-size: 120px;
 		text-align: center;
 		margin: -40px 0 0 0;
 		position: absolute;
@@ -139,7 +142,8 @@ $textShadow = rgb(23, 23, 23) -1px 1px 0px, rgb(24, 24, 24) -2px 2px 0px, rgb(25
 			display: none;
 
 	#parallaxBGPX2
-		background-size: cover; 
+		background-size: 100%;
+		//background-size: cover;  
 		background-position:0 100%;
 		+below(2)
 			display: none;
@@ -235,7 +239,7 @@ $textShadow = rgb(23, 23, 23) -1px 1px 0px, rgb(24, 24, 24) -2px 2px 0px, rgb(25
 			display: none;
 
 	#parallaxBGPX3
-		background-size: cover; 
+		background-size: 100%;
 		background-position:0 100%;
 		+below(2)
 			display: none;

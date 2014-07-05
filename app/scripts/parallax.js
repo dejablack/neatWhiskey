@@ -37,8 +37,8 @@ $(document).ready(function($) {
     // build tween
     var tween = new TimelineMax ()
         .add([
-            TweenMax.fromTo(".leftPX2", 1, {left: "100%"}, {left: "-5%", ease: Linear.easeNone}),
-            TweenMax.fromTo(".rightPX2", 1, {right: "100%"}, {left: "10%", ease: Linear.easeNone}),
+            TweenMax.fromTo(".leftPX2", 1, {left: "100%", alpha: "1"}, {left: "-30%", top: ".9", alpha: ".6", ease: Linear.easeNone}),
+            TweenMax.fromTo(".rightPX2", 1, {right: "100%", alpha: "1"}, {left: "30%", top: ".1", alpha: ".6", ease: Linear.easeNone}),
             TweenMax.to("#parallaxBGPX2", 1, {backgroundPosition: "0% -0%", ease:Sine.easeInOut})
         ]);
 
@@ -51,7 +51,6 @@ $(document).ready(function($) {
     // show indicators (requires debug extension)
     // scene.addIndicators();
 });
-
 
 
 //paralax3
