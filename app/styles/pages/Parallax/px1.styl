@@ -169,6 +169,40 @@ $textShadow = rgb(23, 23, 23) -1px 1px 0px, rgb(24, 24, 24) -2px 2px 0px, rgb(25
 //// Mobile Styles
 ////-------------------*/
 
+// .mobilePX2Shadow
+// 	display: none;
+// 	+below(2)
+// 		display: block;
+// 		background: $g2;
+// 	.top
+// 		height: 10px;
+// 		width: 100%;
+// 		top: 0;
+// 		background-image: url("../images/parallax_shadow_top.png");
+// 	.bottom
+// 		height: 10px;
+// 		width: 100%;
+// 		bottom: 0;
+// 		background-image: url("../images/parallax_shadow_bottom.png");
+
+// .mobilePX2
+// 	+below(2)
+// 	width: 100%;
+// 		h1
+// 			@extend .reset;
+// 			@extend .sf1;
+// 			padding-top: 30px;
+// 			padding-bottom: 40px;
+// 			padding-left: 15px;
+// 			text-shadow: $textShadow;
+// 			text-align: center;
+// 			color: $c3;
+// 			letter-spacing: 18px;
+
+////-------------------*\
+//// Mobile Styles
+////-------------------*/
+
 .mobilePX2Shadow
 	display: none;
 	+below(2)
@@ -187,18 +221,19 @@ $textShadow = rgb(23, 23, 23) -1px 1px 0px, rgb(24, 24, 24) -2px 2px 0px, rgb(25
 
 .mobilePX2
 	+below(2)
-	width: 100%;
+		background: $g2;
+		min-height: 110px;
+
 		h1
 			@extend .reset;
 			@extend .sf1;
-			padding-top: 30px;
-			padding-bottom: 40px;
-			padding-left: 15px;
+			padding-top: 20px;
+			padding-bottom: 30px;
 			text-shadow: $textShadow;
 			text-align: center;
+			padding-left:15px;
 			color: $c3;
 			letter-spacing: 18px;
-
 
 
 
@@ -282,17 +317,18 @@ $textShadow = rgb(23, 23, 23) -1px 1px 0px, rgb(24, 24, 24) -2px 2px 0px, rgb(25
 		background-image: url("../images/parallax_shadow_bottom.png");
 
 .mobilePX3
-	display: none;
 	+below(2)
-		width: 100%
+		background: $g2;
+		min-height: 110px;
+
 		h1
 			@extend .reset;
 			@extend .sf1;
-			padding-top: 30px;
-			padding-bottom: 40px;
-			padding-left: 15px;
+			padding-top: 20px;
+			padding-bottom: 30px;
 			text-shadow: $textShadow;
 			text-align: center;
+			padding-left:15px;
 			color: $c4;
 			letter-spacing: 18px;
 

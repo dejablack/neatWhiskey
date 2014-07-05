@@ -39,7 +39,7 @@ jQuery("#iconTitle4").fitText(.8, { minFontSize: '20px', maxFontSize: '180px' })
 //Mobile PX
 jQuery(".mobilePX1Shadow").fitText(1, { minFontSize: '30px', maxFontSize: '80px' });
 jQuery(".mobilePX2Shadow").fitText(1.1, { minFontSize: '30px', maxFontSize: '80px' });
-jQuery(".mobilePX3Shadow").fitText(1, { minFontSize: '30px', maxFontSize: '80px' });
+jQuery(".mobilePX3Shadow").fitText(.9, { minFontSize: '30px', maxFontSize: '80px' });
 
 //////////////
 // Flowtype //
