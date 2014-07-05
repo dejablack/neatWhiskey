@@ -27,7 +27,26 @@ header.headerMobile
   position: fixed  
   background: $c1;
   width: 100%; 
-  top: 0px; 
+  top: 0px;
+
+#mobileLogoJPG
+  img
+    margin-left: -5px;
+    margin-top: -5px  
+
+#mobileLogoTxt
+  uppercase()
+  @extend .reset;
+  @extend .pf2;
+  font-size: 1.35em; 
+  letter-spacing: 5px;
+  padding-left: 8px;
+  padding-top: 2px;
+  margin-top: -95px;
+  opacity: 0;
+  color:$c1;
+
+
 
 .headerMobileShadow
   height: 10px;
@@ -37,20 +56,6 @@ header.headerMobile
   background-image: url("../images/parallax_shadow_top.png");
 
 
-
-
-
-header.headerMobile
-  section
-    h1#mobileLogo 
-      uppercase()
-      @extend .reset;
-      @extend .pf2;
-      font-size: 3em; 
-      letter-spacing: 5px;
-      padding-left: 5px;
-      padding-top: 2px;
-      color:$headLogoColor;
 
 
 //----------------------------------*\

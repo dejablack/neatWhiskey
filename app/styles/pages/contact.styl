@@ -40,6 +40,8 @@ $green = rgba(39,174,96,.9);
 		size: 400px;
 		border-radius: 50%; 
 		background: green;
+		+below(2)
+			size: 200px;
 
 		img
 			align()
@@ -51,6 +53,8 @@ $green = rgba(39,174,96,.9);
 		@extend .reset;
 		position: relative
 		top: 105px;
+		+below(2)
+			display: none
 		h3
 			span(1/2)
 			@extend .sf2;
@@ -62,6 +66,7 @@ $green = rgba(39,174,96,.9);
 				font-size: 1.6em;
 				line-height: 5px;
 				color: darken($blue, 10)
+
 
 		#pIcon
 			span(1/8)
@@ -79,6 +84,8 @@ $green = rgba(39,174,96,.9);
 	height: 95px;
 	border-bottom-left-radius: 45px;
 	border-bottom-right-radius: 45px;
+	+below(2)
+		display: none
 
 	h3
 		span(1/2)
