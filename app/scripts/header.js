@@ -25,7 +25,7 @@ $(document).ready(function($) {
         ]);
 
     // build scene
-    var scene = new ScrollScene({triggerElement: "#parallaxPX1", duration: 10, offset: 200})
+    var scene = new ScrollScene({triggerElement: "#parallaxPX1", duration: 10, offset: 300})
                     .setTween(tween)
                     .triggerHook("onCenter")
                     .addTo(controller);
