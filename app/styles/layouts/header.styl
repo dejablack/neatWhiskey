@@ -6,12 +6,14 @@
 ////-------------------*/
 
 $navTraz = all .25s ease-in-sine;
-
+$hGray = gray;
+$hTraz = all .75s $tz1;
 
 //----------------------------------*\
 // Header
 //----------------------------------*/
 .headerDesktop
+	transition: $hTraz;
 	position: fixed;
 	z-index: 1000;
 	width: 100%;
@@ -150,3 +152,38 @@ nav
 				text-decoration: none;
 
 
+
+
+//----------------------------------*\
+// Header Switch
+//----------------------------------*/
+
+.headerSwitch
+	transition: $hTraz
+	background: rgba(255, 255, 255, 0.86);
+	.headerTitle
+		transition: $hTraz
+		border-color: $hGray;
+	.headDivide
+		transition: $hTraz
+		border-color: $hGray;
+		.creativo
+			a
+				color: $hGray
+	nav
+		border-color: $hGray;
+		li
+			border-color: $hGray
+			&:hover
+				transition: $navTraz;
+				cursor: pointer
+				background: $hGray
+				a
+					color: white;
+			a
+				color: $hGray
+		//current
+		.currentNav
+			background: $hGray
+			a
+				color: white;

@@ -36,12 +36,12 @@
 	OnePageNav.prototype = {
 		defaults: {
 			navItems: 'a',
-			currentClass: 'current',
+			currentClass: 'currentNav',
 			changeHash: false,
 			easing: 'swing',
 			filter: '',
 			scrollSpeed: 750,
-			scrollThreshold: 0.5,
+			scrollThreshold: 0.1,
 			begin: false,
 			end: false,
 			scrollChange: false

@@ -6,10 +6,16 @@ script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
 script(src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.8/TweenMax.min.js")
 script(src='//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')
 
+script
+	$(document).ready(function() {
+	$('#nav').onePageNav();
+	});
+
 
 // build:js scripts/GASP.js
-script(src='scripts/parallax.js')
 script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.min.js')
+script(src='scripts/header.js')
+script(src='scripts/parallax.js')
 // endbuild
 //- Script Injects
 //- Not a clean solution but it will do
@@ -19,7 +25,6 @@ script(src='bower_components/matchHeight/jquery.matchHeight.js')
 script(src='scripts/vendor/mediaBreakpoints.js')
 script(src='bower_components/fastclick/lib/fastclick.js')
 script(src='scripts/vendor/singlePageNav.js')
-script(scr='scripts/vendor/singlePageNavSettings.js')
 // endbower 
 // endbuild
 
@@ -52,4 +57,4 @@ script(src='scripts/processPage.js')
 // endbuild
 
 //script(src='scripts/websiteUpdate.js')
-//script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.debug.js')
+script(src='bower_components/ScrollMagic/js/jquery.scrollmagic.debug.js')
