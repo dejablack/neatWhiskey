@@ -121,16 +121,126 @@ section.splashContent
 ////-------------------*\
 //// Contact Buttton
 ////-------------------*/
+	
+#buttonWrap
+	center()
+	cf()
 
-.indexBtn
-	col(1/2)
-	shift(1/4)
+$buttonFontSize = 75px;
+$buttonWidth = 675px;
+$buttonHeight = 125px;
+$buttonPrimaryColor = $c1;
+$buttonSecondColor = white;
+$buttonBorderWidth = 7px
+
+.buttonBase {
 	@extend .reset;
 	@extend .sf1;
-	letter-spacing: 15px;
-	margin-top: 85px;
-	height: 125px;
-	border: 3px solid white;
-	text-align: center
-	color: white;
+	letter-spacing: 3px;
+    font-size: $buttonFontSize;
+    position: relative;
+    width: $buttonWidth;
+    height: $buttonHeight;
+    text-align: center;
+    cursor: default;
+    margin: 0 auto;
+}
 
+.buttonBase:hover {
+    cursor: pointer;
+}
+
+.doubleRoll {
+    perspective: ($buttonHeight*10);
+    transform-style: preserve-3d;
+}
+
+.doubleRoll div {
+	//Top padding
+	margin-top: 50px;
+    position: absolute;
+    text-align: center;
+    padding: ($buttonHeight/8);
+    border: $buttonSecondColor solid $buttonBorderWidth;
+    pointer-events: none;
+}
+
+.doubleRoll div:nth-child(1) {
+    color: $buttonSecondColor;
+    background-color: $buttonPrimaryColor;
+    z-index: 0;
+    width: 100%;
+    height: $buttonHeight;
+    clip: rect(0px, ($buttonWidth/2), $buttonHeight, 0px);
+    position: absolute;
+    transition: all 0.2s ease;
+    transform: rotateX(0deg);
+    transform-origin: 50% 50% ($buttonHeight/-2);
+}
+
+.doubleRoll div:nth-child(2) {
+    color: $buttonSecondColor;
+    background-color: $buttonSecondColor;
+    z-index: -1;
+    width: 100%;
+    height: $buttonHeight;
+    clip: rect(0px, ($buttonWidth/2), $buttonHeight, 0px);
+    position: absolute;
+    transform: rotateX(90deg);
+    transition: all 0.2s ease;
+    transform-origin: 50% 50% ($buttonHeight/-2);
+    border: $buttonPrimaryColor solid $buttonBorderWidth;
+    padding-right: 275px; 
+}
+
+.doubleRoll div:nth-child(3) {
+    color: $buttonSecondColor;
+    background-color: $buttonPrimaryColor;
+    z-index: 0;
+    width: 100%;
+    height: $buttonHeight;
+    clip: rect(0px, $buttonWidth, $buttonHeight, ($buttonWidth/2));
+    position: absolute;
+    transition: all 0.2s ease 0.1s;
+    transform: rotateX(0deg);
+    transform-origin: 50% 50% ($buttonHeight/-2);
+}
+
+.doubleRoll div:nth-child(4) {
+    color: $buttonSecondColor;
+    background-color: $buttonSecondColor;
+    z-index: -1;
+    width: 100%;
+    height: $buttonHeight;
+    clip: rect(0px, $buttonWidth, $buttonHeight, ($buttonWidth/2));
+    position: absolute;
+    transform: rotateX(-90deg);
+    transition: all 0.2s ease 0.1s;
+    transform-origin: 50% 50% ($buttonHeight/-2);
+    border: $buttonPrimaryColor solid $buttonBorderWidth;
+    padding-left: 300px; 
+}
+
+.doubleRoll:hover div:nth-child(1) {
+    background-color: $buttonSecondColor;
+    transition: all 0.2s ease;
+    transform: rotateX(-90deg);
+}
+
+.doubleRoll:hover div:nth-child(2) {
+    color: $buttonPrimaryColor;
+    transition: all 0.2s ease;
+    transform: rotateX(0deg);
+}
+
+.doubleRoll:hover div:nth-child(3) {
+    background-color: $buttonSecondColor;
+    transition: all 0.2s ease 0.1s;
+    transform: rotateX(90deg);
+}
+
+.doubleRoll:hover div:nth-child(4) {
+    color: $buttonPrimaryColor;
+    transition: all 0.2s ease 0.1s;
+    transform: rotateX(0deg);
+}
