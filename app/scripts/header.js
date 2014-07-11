@@ -52,7 +52,7 @@ $(document).ready(function($) {
         ]);
 
     // build scene
-    var scene = new ScrollScene({triggerElement: "#mobilePX1", duration: 300})
+    var scene = new ScrollScene({triggerElement: "#mobilePX1", duration: 600})
                     .setTween(tween)
                     .triggerHook("onCenter")
                     .addTo(controller);

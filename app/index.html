@@ -67,11 +67,11 @@
         </div>
         <nav class="js-menu sliding-menu-content">
           <ul>
-            <li><a href="#">Home</a><span class="icon-home mobileIcon c1"></span></li>
-            <li><a href="#">About</a><span class="icon-info-outline mobileIcon c2"></span></li>
-            <li><a href="#">Process</a><span class="icon-cogs mobileIcon c3"></span></li>
-            <li><a href="#">Contact</a><span class="icon-location mobileIcon c4"></span></li>
-            <li><a href="javascript:void(0)" class="icon-mail-alt"></a><a href="javascript:void(0)" class="icon-phone"></a></li>
+            <li><a href="#section-1">Home</a><span class="icon-home mobileIcon c1"></span></li>
+            <li><a href="#section-2">About</a><span class="icon-info-outline mobileIcon c2"></span></li>
+            <li><a href="#section-3">Process</a><span class="icon-cogs mobileIcon c3"></span></li>
+            <li><a href="#section-4">Contact</a><span class="icon-location mobileIcon c4"></span></li>
+            <li><a href="mailto:tyler@creativo.io?Subject=Creativo%Inquiry" class="icon-mail-alt"></a><a href="tel:+2624434015" class="icon-phone"></a></li>
           </ul>
         </nav>
         <div class="js-menu-screen menu-screen"></div>
@@ -163,11 +163,13 @@
         </div>
         <section id="parallaxPX1">
           <div id="parallaxBGPX1">
+            <div id="blueOverlayPX1"></div>
+            <div id="greenOverlayPX1"></div>
             <div class="top"></div>
             <div class="bottom"></div>
           </div>
-          <h3>Creativo</h3>
-          <h3 id="big">About</h3>
+          <!--h3 Creativo-->
+          <h1 id="aboutText">About</h1>
         </section>
       </div>
       <div id="about">
@@ -418,13 +420,72 @@
         </div>
         <section id="parallaxPX3">
           <div id="parallaxBGPX3">
+            <div id="cloudsPX3Bottom"></div>
             <div class="top"></div>
             <div class="bottom"></div>
           </div>
           <h1 id="px3Title">Contact Us</h1>
         </section>
       </div>
-      <!--include pages/contact-->
+      <div id="contact">
+        <section>
+          <div class="phoneDisplay">
+            <div class="circleWrap">
+              <div class="circle"><img src="../images/logoWeb.png" alt=""></div>
+            </div>
+            <div class="phone">
+              <h3>262<span>.</span>443<span>.</span>4015</h3>
+              <div id="pIcon">
+                <div class="icon-phone"></div>
+              </div>
+            </div>
+          </div>
+          <div class="emailDisplay">
+            <h3>info<span class="at">@</span>creativo<span class="dot">.</span>io</h3>
+            <div id="eIcon">
+              <div class="icon-mail-alt"></div>
+            </div>
+          </div>
+          <form id="desktopForm">
+            <fieldset>
+              <div class="contactTitle">
+                <h2>Send A Message</h2>
+              </div>
+              <div class="formTopWrap">
+                <p class="formName">
+                  <label for="text_field" class="labelName">Name</label>
+                  <input id="text_field" type="text" placeholder="Tyler Schultz">
+                </p>
+                <p class="formBis">
+                  <label for="text_field" class="labelBis">Business</label>
+                  <input id="text_field2" type="text" placeholder="Creativo">
+                </p>
+              </div>
+              <div class="formBottomWrap">
+                <p class="formPhone">
+                  <label for="text_field" class="labelPhone">Phone</label>
+                  <input id="text_field3" type="text" placeholder="262.443.4015">
+                </p>
+                <p class="formEmail">
+                  <label for="text_field" class="labelEmail">Email</label>
+                  <input id="text_field4" type="text" placeholder="tyler@creativo.io">
+                </p>
+              </div>
+              <div class="formMessageWrap">
+                <p class="formMessage">
+                  <label for="text_area" class="labelMessage">Message</label>
+                  <textarea id="text_area" placeholder="Lets grab a cup of coffee and talk shop."></textarea>
+                </p>
+              </div>
+              <div class="buttonWrap">
+                <p class="formButton">
+                  <input type="submit" value="Submit" class="pressButton lightText large square black">
+                </p>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </div>
       <div class="boxPosistion box4Color"></div>
     </div>
     <div data-remodal-id="modal" data-remodal-options="{ &quot;hashTracking&quot;: false }" class="remodal">

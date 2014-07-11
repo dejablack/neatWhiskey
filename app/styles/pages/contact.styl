@@ -5,6 +5,8 @@
 //----------------------------------*/
 
 #contact
+	+below(2)
+		display: none
 	background: $c4; 
 	min-height: 900px;
 
@@ -38,15 +40,16 @@ $green = rgba(39,174,96,.9);
 		align()
 		position: relative
 		size: 400px;
+		border: 10px solid darken($c1, 3); 
 		border-radius: 50%; 
-		background: green;
+		background: $c4;
 		+below(2)
 			size: 200px;
 
 		img
 			align()
+			size: 280px; 
 			position: relative
-			border-radius: 50%;  
 
 
 	.phone

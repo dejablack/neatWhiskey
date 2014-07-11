@@ -185,6 +185,9 @@ $sliding-menu-color-hover = darken($sliding-menu-border-color, 15);
     height: 75px;
     border-bottom: $sliding-menu-border;
     border-right: none;
+    &:hover{
+      background: none;
+    }
     span{
       float: right;
       font-size: 3.5em;
@@ -200,25 +203,31 @@ $sliding-menu-color-hover = darken($sliding-menu-border-color, 15);
         unstack()
         @extend .reset;
         font-size: 5.5em 
-        border-bottom: 2px solid $sliding-menu-border-color;
-        border-top: 2px solid $sliding-menu-border-color;
+        border-bottom: 4px solid $sliding-menu-border-color;
+        border-top: 4px solid $sliding-menu-border-color;
         padding-right: 10px;
          padding-left: 10px;
         border-bottom-left-radius: 25px;
         border-top-left-radius: 25px;
         //color: aplha(#fff, .5)  
         background: radial-gradient(rgba(241, 196, 15, 0.1), rgba(241, 196, 15, 0.3), rgba(241, 196, 15, .7));
+        &:hover{
+          background: none;
+        }
         &:last-child{
         padding-left: 10px;
         padding-right: 10px;  
-        border-left: 2px solid $sliding-menu-border-color;
-        border-bottom: 2px solid $sliding-menu-border-color;
+        border-left: 4px solid $sliding-menu-border-color;
+        border-bottom: 4px solid $sliding-menu-border-color;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 25px; 
         border-top-left-radius: 0px;
         border-top-right-radius: 25px;
         color:aplha(white, 0.5);
         background: radial-gradient(rgba(49, 108, 126, 0.3), rgba(49, 108, 126, 0.5), rgba(49, 108, 126, 0.7));
+        &:hover{
+          background: none;
+        }
         }
       }
     }
@@ -231,10 +240,10 @@ $sliding-menu-color-hover = darken($sliding-menu-border-color, 15);
     padding: 1em;
     margin-left: -1em;
 
-    &:hover {
-      // background-color: $sliding-menu-background-hover;
-      // color: $sliding-menu-color-hover;
-    }
+    // &:hover {
+    //   // background-color: $sliding-menu-background-hover;
+    //   // color: $sliding-menu-color-hover;
+    // }
   }
 
   &.is-visible {
