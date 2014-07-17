@@ -56,7 +56,7 @@ $(document).ready(function($) {
     // build tween
     var tween = new TimelineMax ()
         .add([
-            TweenMax.to("#cloudsPX3Bottom", 1,  {css:{transform:"translateX(0%)", ease:Sine.easeInOut}}),
+            //TweenMax.to("#cloudsPX3Bottom", 1,  {css:{transform:"translateX(0%)", ease:Sine.easeInOut}}),
            // TweenMax.fromTo("#cloudsPX3Top", 1,  {css:{marginLeft:"-3000px"}}, {css:{marginLeft:"-2000px"}})
         ]);
 
